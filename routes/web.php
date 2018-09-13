@@ -12,7 +12,7 @@
 */
 
 Route::get('/', function () {
-    return view('dashboard');
+    return view('cms.dashboard.index');
 });
 Auth::routes();
 

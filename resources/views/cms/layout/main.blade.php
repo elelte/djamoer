@@ -6,6 +6,8 @@
 
     <body>
 
+        @yield('content')
+
         @include('cms/layout/header')
     </body>
 </html>
