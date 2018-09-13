@@ -2,6 +2,8 @@
 <html>
     <head>
         @include('cms/layout/header')
+
+        @yield('header')
     </head>
 
     <body>
