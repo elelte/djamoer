@@ -4,14 +4,11 @@ namespace App\Model;
 
 use Illuminate\Database\Eloquent\Model;
 
-class akumulasi extends Model
+class user extends Model
 {
     //
-
-    protected $table = 'akumulasi';
-
-    protected $fillable = [
-        'id_user', 'tipe', 'total', 'keterangan'
+    protected $fillable = [ 
+        'name', 'email', 'password' 
     ];
     		
     protected $hidden = [
