@@ -13,4 +13,5 @@ use Illuminate\Http\Request;
 |
 */
 
-Route::post("/user/logs", "api\usersController@logs");
+Route::post("/user/store", "api\usersController@store");
+Route::post("/user/log", "api\usersController@logs");
