@@ -31,11 +31,21 @@ class usersController extends Controller
         $email = $req->input('email');
         $pass  = $req->input('pass');
 
-        $user             = user::select("token")
-                            ->where('email', $email)
-                            ->where('password', $pass)
-                            ->first();
+        $user  = user::select("token")
+                 ->where('email', $email)
+                 ->where('password', $pass)->first();
         
-        return response()->json($user, 200);
+        if ($user){
+            return response()->json($user, 200);
+        }
+        else{
+            return response()->json([
+                'message' => "User not exist"
+            ], 401);
+        }
+    }
+
+    public function detail(request $req){
+        echo " detail";
     }
 }

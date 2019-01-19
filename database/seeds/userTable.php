@@ -20,6 +20,7 @@ class userTable extends Seeder
         $user->name       = "gaenael";
         $user->email      = "ganalpratama@gmail.com";
         $user->password   = Hash::make("12345abc");
+        $user->token      = Sha1(time());
         $user->save();
     }
 }
