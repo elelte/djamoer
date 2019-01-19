@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-    <head>6
+    <head>
         @include('cms/layout/header')
 
         @yield('header')

@@ -14,6 +14,8 @@
 Route::get('/', function () {
     return view('cms.dashboard.index');
 });
+
+
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
