@@ -12,8 +12,10 @@
 */
 
 Route::get('/', function () {
-    return view('cms.dashboard.index');
+    return view('cms.dashboard.ind');
 });
+
+
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
