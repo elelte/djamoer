@@ -12,7 +12,7 @@
 */
 
 Route::get('/', function () {
-    return view('cms.dashboard.indesx');
+    return view('cms.dashboard.test2');
 });
 
 

@@ -29,64 +29,127 @@
   <link rel="stylesheet" href="{{asset('AdminLTE/plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.min.css')}}">
 @endsection
 
+<!-- <style>
+/* button.btn.btn-default.btn-lg{
+  background-color:black;
+}
+
+thead#promo{
+  font-size:17px;
+  margin:auto;
+}
+
+#Act1{
+  font-size:17px;
+} */
+
+
+</style> -->
+
+<!-- <style>
+   h1{
+  text-align:center;
+  background-color:yellow;
+}
+    th{
+        background-color:yellow;
+    }
+    tr:hover{
+        background-color:black; 
+    }
+    }
+    
+</style> -->
 
 @section('content')
-<div id="ttable">
-        <div class="table-responsive">
-            <table class="table">
-                <thead>
-                    <tr id="th">
-                        <th width="50px">No </th>
-                        <th width="150px">Data1 </th>
-                        <th width="150px">Data2 </th>
-                        <th width="150px">Data3 </th>
-                    </tr>
-                </thead>
-                <tbody id="tb">
-                    <tr:hover {background-color: white;}></tr>
-                    <!-- coloumn pertama -->
-                    <tr:hover {background-color: white;}>
-                        <td>Cell 1</td>
-                        <td>Cell 2</td>
-                        <td>Text</td>
-                        <td>Text</td>
-                    </tr>
-                    <!-- coloumn Kedua -->
-                    <tr:hover {background-color: white;}>
-                        <td>Cell 3</td>
-                        <td>Cell 2</td>
-                        <td>Text </td>
-                        <td>Text</td>
-                    </tr>
-                    <!-- coloumn ketiga -->
-                    <tr:hover {background-color: white;}>
-                        <td>Cell 3</td>
-                        <td>Cell 2</td>
-                        <td>Text </td>
-                        <td>Text</td>
-                    </tr>
-                    <!-- coloumn keempat -->
-                    <tr:hover {background-color: white;}>
-                        <td>Cell 3</td>
-                        <td>Cell 2</td>
-                        <td>Text </td>
-                        <td>Text</td>
-                    </tr>
-                    <!-- coloumn ke5 -->
-                    <tr:hover {background-color: white;}>
-                        <td>Cell 3</td>
-                        <td>Cell 2</td>
-                        <td>Text </td>
-                        <td>Text</td>
-                    </tr>
-                    <!-- coloumn pertama -->
-                    <tr:hover {background-color: white;}>
-                        <td>Cell 3</td>
-                        <td>Cell 2</td>
-                        <td>Text </td>
-                        <td>Text</td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
+<div class="table-responsive">
+                <table class="table">
+                <!-- id="promo" -->
+                    <thead>
+                        <tr>
+                            <th class="info" width="50px">Id </th>
+                            <th class="info">Nama </th>
+                            <th class="info">Email </th>
+                            <th>Action </th>                        
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Cell 1</td>
+                            <td>Cell 2</td>
+                            <td>Cell 2</td>
+                            <td>
+                            <div class="btn-group btn-group-sm" role="group">
+                                <button class="btn btn-primary btn-lg" type="button">Primary </button>
+                                <button class="btn btn-info btn-lg" type="button">Secondary </button>
+                            </div></td>
+                        </tr>
+                        <tr>
+                            <td>Cell 3</td>
+                            <td>Cell 4</td>
+                            <td>Cell 4</td>
+                        </tr>
+                        <tr>
+                            <td>Cell 1</td>
+                            <td>Cell 2</td>
+                            <td>Cell 2</td>
+                        </tr>
+                        <tr>
+                            <td>Cell 1</td>
+                            <td>Cell 2</td>
+                            <td>Cell 2</td>
+                        </tr>
+                        <tr>
+                            <td>Cell 1</td>
+                            <td>Cell 2</td>
+                            <td>Cell 2</td>
+                        </tr>
+                        <tr>
+                            <td>Cell 1</td>
+                            <td>Cell 2</td>
+                            <td>Cell 2</td>
+                        </tr>
+                        <tr>
+                            <td>Cell 1</td>
+                            <td>Cell 2</td>
+                            <td>Cell 2</td>
+                        </tr>
+                        <tr>
+                            <td>Cell 1</td>
+                            <td>Cell 2</td>
+                            <td>Cell 2</td>
+                        </tr>
+                        <tr>
+                            <td>Cell 1</td>
+                            <td>Cell 2</td>
+                            <td>Cell 2</td>
+                        </tr>
+                        <tr>
+                            <td>Cell 1</td>
+                            <td>Cell 2</td>
+                            <td>Cell 2</td>
+                        </tr>
+                        <tr>
+                            <td>Cell 1</td>
+                            <td>Cell 2</td>
+                            <td>Cell 2</td>
+                        </tr>
+                        <tr>
+                            <td>Cell 1</td>
+                            <td>Cell 2</td>
+                            <td>Cell 2</td>
+                        </tr>
+                        <tr>
+                            <td>Cell 1</td>
+                            <td>Cell 2</td>
+                            <td>Cell 2</td>
+                        </tr>
+                        <tr>
+                            <td>Cell 1</td>
+                            <td>Cell 2</td>
+                            <td>Cell 2</td>
+                        </tr>
+                    </tbody>
+                </table>    
+        </div>        
     @endsection
