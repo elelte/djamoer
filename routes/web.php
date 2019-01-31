@@ -12,9 +12,19 @@
 */
 
 Route::get('/', function () {
+    return view('cms.dashboard.ind');
+});
+
+Route::get('/test', function () {
     return view('cms.dashboard.test2');
 });
 
+Route::get('/user', function () {
+    return view('cms.user.index');
+});
+Route::get('/user/edit', function () {
+    return view('cms.user.edit');
+});
 
 Auth::routes();
 
