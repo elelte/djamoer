@@ -29,56 +29,63 @@
   <link rel="stylesheet" href="{{asset('AdminLTE/plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.min.css')}}">
 @endsection
 
-<!-- <style>
-/* button.btn.btn-default.btn-lg{
-  background-color:black;
+<style>
+.deef{
+  display:none;
 }
 
-thead#promo{
-  font-size:17px;
-  margin:auto;
+.deef2{
+  padding-top:0px;
+  margin-bottom:20px;
+  left=0px;
 }
-
-#Act1{
-  font-size:17px;
+/* .content-header{
+  display:block;cxdzA
 } */
 
+</style>   
+@section('content')
+</head>
+<section class="content-header deef2">
+                <h1>
+                User
+                <small>Control panel</small>
+                </h1>
+                <ol class="breadcrumb">
+                <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
+                <li class="active">User</li>
+                </ol>
+            </section> 
+  </head>
 
-</style> -->
-
-<!-- <style>
-   h1{
-  text-align:center;
-  background-color:yellow;
-}
-    th{
-        background-color:yellow;
-    }
-    tr:hover{
-        background-color:black; 
-    }
-    }
-    
-</style> -->
-
-@section('content')      
 <div class="box">
     <div class="box-header with-border">
-        <h3 class="box-title" style="text-align:cemter;">Bordered Table</h3>
+        <!-- <h3>Bordered Table</h3>  -->
+            <!-- <form target="_self" class="form-inline">
+                <div class="form-group" style="background-color:rgba(255,255,255,0);"><label for="search-field" class="control-label" style="background-color:rgba(46,231,209,0.28);"></label><input type="search" name="search" placeholder="Search name"
+                class="form-control search-field " id="search-field" /><button class="btn btn-primary pull-right" type="submit" style="background-color:rgb(41,97,146);"><i class="glyphicon glyphicon-search"></i></button></div>
+            </form> -->
+
+            <form target="_self" class="form-inline">
+                <div class="form-group" style="background-color:rgba(255,255,255,0);"><label for="search-field" class="control-label" style="background-color:rgba(46,231,209,0.28);"></label><input type="search" name="search" placeholder="Search name"
+                class="form-control search-field " id="search-field" /><button class="btn btn-primary pull-right" type="submit" style="background-color:rgb(41,97,146);">Search</button></div>
+            </form> 
     </div>
-    <!-- /.box-header -->
+    <!-- /.box-header -->    
     <div class="box-body">
-        <table class="table table-bordered">
+        <table class="table table-striped table-bordered">
         <tbody><tr>
             <th style="width: 10px">ID</th>
             <th style="width:250px">Name</th>
             <th style="width:250px">Email</th>
+            <th style="width:250px">No.handphone</th>
             <th>Action</th>
         </tr>
         <tr>
             <td>1.</td>
             <td>Update software</td>
-            <td>test2</td>         
+            <td>test2</td>
+            <td>nomor</td>                     
             <td>
             <div class="btn-toolbar">
                 <div class="btn-group" role="group">
@@ -93,8 +100,8 @@ thead#promo{
         <tr>
             <td>2.</td>
             <td>Clean database</td>
-            <td>test
-            </td>
+            <td>test</td>
+            <td>nomor</td>  
             <td> 
             <div class="btn-toolbar">
                 <div class="btn-group" role="group">
@@ -110,6 +117,7 @@ thead#promo{
             <td>3.</td>
             <td>Cron job running</td>
             <td>test3</td>
+            <td>nomor</td>  
             <td>
             <div class="btn-toolbar">
                 <div class="btn-group" role="group">
@@ -125,6 +133,7 @@ thead#promo{
             <td>4.</td>
             <td>Fix and squish bugs</td>
             <td>test4</td>
+            <td>nomor</td>  
             <td>
             <div class="btn-toolbar">
                 <div class="btn-group" role="group">
@@ -140,6 +149,7 @@ thead#promo{
             <td>5.</td>
             <td>Fix and squish bugs</td>
             <td>test4</td>
+            <td>nomor</td>  
             <td>
             <div class="btn-toolbar">
                 <div class="btn-group" role="group">
@@ -155,6 +165,7 @@ thead#promo{
             <td>6.</td>
             <td>Fix and squish bugs</td>
             <td>test4</td>
+            <td>nomor</td>  
             <td>
             <div class="btn-toolbar">
                 <div class="btn-group" role="group">
@@ -170,6 +181,7 @@ thead#promo{
             <td>7.</td>
             <td>Fix and squish bugs</td>
             <td>test4</td>
+            <td>nomor</td>  
             <td>
             <div class="btn-toolbar">
                 <div class="btn-group" role="group">
@@ -185,6 +197,7 @@ thead#promo{
             <td>8.</td>
             <td>Fix and squish bugs</td>
             <td>test4</td>
+            <td>nomor</td>  
             <td>
             <div class="btn-toolbar">
                 <div class="btn-group" role="group">
@@ -200,6 +213,7 @@ thead#promo{
             <td>9.</td>
             <td>Fix and squish bugs</td>
             <td>test4</td>
+            <td>nomor</td>  
             <td>
             <div class="btn-toolbar">
                 <div class="btn-group" role="group">
@@ -215,6 +229,7 @@ thead#promo{
             <td>10.</td>
             <td>Fix and squish bugs</td>
             <td>test4</td>
+            <td>nomor</td>  
             <td>
             <div class="btn-toolbar">
                 <div class="btn-group" role="group">
