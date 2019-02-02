@@ -1,6 +1,6 @@
 @extends('cms.layout.main')
 
-@section('header')
+<!-- @section('header')
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title>AdminLTE 2 | Dashboard</title>
@@ -27,16 +27,29 @@
   <link rel="stylesheet" href="{{asset('AdminLTE/bower_components/bootstrap-daterangepicker/daterangepicker.css')}}">
   <!-- bootstrap wysihtml5 - text editor -->
   <link rel="stylesheet" href="{{asset('AdminLTE/plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.min.css')}}">
-@endsection
+@endsection -->
 
-@section('content') 
+<style>
+.deef{
+  display:none;
+}
 
-<div class="box box-info">
-            <div class="box-header with-border" style="text-align:center;">
-              <h3 class="box-title">(Edit) Data</h3>
-            </div>
-            <!-- /.box-header -->
-            <!-- form start -->
+.deef2{
+  padding-top:0px;
+  margin-bottom:20px;
+  left=0px;
+}
+/* .content-header{
+  display:block;cxdzA
+} */
+
+</style>         
+   
+
+@section('content')           
+</head>         
+                      
+  <div class="box box-info">
             <form class="form-horizontal">
               <div class="box-body">
                 <div class="form-group">
@@ -72,8 +85,8 @@
               </div>
               <!-- /.box-body -->
               <div class="box-footer">
-                <a href=""><button type="submit" class="btn btn-default">Batal</button></a>
-                <a href=""><button type="submit" class="btn btn-info pull-right">Simpan</button></a>
+                <a href="#"><button type="submit" class="btn btn-default">Batal</button></a>
+                <a href="#"><button type="submit" class="btn btn-info pull-right">Simpan</button></a>
               </div>
               <!-- /.box-footer -->
             </form>

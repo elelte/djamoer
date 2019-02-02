@@ -29,34 +29,7 @@
   <link rel="stylesheet" href="{{asset('AdminLTE/plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.min.css')}}">
 @endsection
 
-<style>
-.deef{
-  display:none;
-}
-
-.deef2{
-  padding-top:0px;
-  margin-bottom:20px;
-  left=0px;
-}
-/* .content-header{
-  display:block;cxdzA
-} */
-
-</style>   
 @section('content')
-</head>
-<section class="content-header deef2">
-                <h1>
-                User
-                <small>Control panel</small>
-                </h1>
-                <ol class="breadcrumb">
-                <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
-                <li class="active">User</li>
-                </ol>
-            </section> 
-  </head>
 
 <div class="box">
     <div class="box-header with-border">
@@ -66,7 +39,7 @@
                 class="form-control search-field " id="search-field" /><button class="btn btn-primary pull-right" type="submit" style="background-color:rgb(41,97,146);"><i class="glyphicon glyphicon-search"></i></button></div>
             </form> -->
 
-            <form target="_self" class="form-inline">
+            <form target="#" class="form-inline">
                 <div class="form-group" style="background-color:rgba(255,255,255,0);"><label for="search-field" class="control-label" style="background-color:rgba(46,231,209,0.28);"></label><input type="search" name="search" placeholder="Search name"
                 class="form-control search-field " id="search-field" /><button class="btn btn-primary pull-right" type="submit" style="background-color:rgb(41,97,146);">Search</button></div>
             </form> 
@@ -78,14 +51,14 @@
             <th style="width: 10px">ID</th>
             <th style="width:250px">Name</th>
             <th style="width:250px">Email</th>
-            <th style="width:250px">No.handphone</th>
+            <th style="width:200px">No.handphone</th>
             <th>Action</th>
         </tr>
         <tr>
             <td>1.</td>
             <td>Update software</td>
             <td>test2</td>
-            <td>nomor</td>                     
+            <td style="text-align:right">nomor</td>                     
             <td>
             <div class="btn-toolbar">
                 <div class="btn-group" role="group">
