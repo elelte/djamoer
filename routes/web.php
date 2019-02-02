@@ -15,8 +15,8 @@ Route::get('/', function () {
     return view('cms.dashboard.ind');
 });
 
-Route::get('/test', function () {
-    return view('cms.dashboard.test2');
+Route::get('/akumulasi', function () {
+    return view('cms.akumulasi.akumul');
 });
 
 Route::get('/user', function () {

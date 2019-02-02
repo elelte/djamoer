@@ -1,10 +1,10 @@
 @extends('cms.layout.main')
 
-@section('header')
+<!-- @section('header')
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title>AdminLTE 2 | Dashboard</title>
-  <!-- Tell the browser to be responsive to screen width -->
+  <-- Tell the browser to be responsive to screen width -->
   <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
   <!-- Bootstrap 3.3.7 -->
   <link rel="stylesheet" href="{{asset('AdminLTE/bower_components/bootstrap/dist/css/bootstrap.min.css')}}">
@@ -27,10 +27,10 @@
   <link rel="stylesheet" href="{{asset('AdminLTE/bower_components/bootstrap-daterangepicker/daterangepicker.css')}}">
   <!-- bootstrap wysihtml5 - text editor -->
   <link rel="stylesheet" href="{{asset('AdminLTE/plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.min.css')}}">
-@endsection
+@endsection -->
+
 
 @section('content')
-
 <div class="box">
     <div class="box-header with-border">
         <!-- <h3>Bordered Table</h3>  -->
@@ -49,16 +49,18 @@
         <table class="table table-striped table-bordered">
         <tbody><tr>
             <th style="width: 10px">ID</th>
-            <th style="width:250px">Name</th>
-            <th style="width:250px">Email</th>
-            <th style="width:200px">No.handphone</th>
+            <th style="width:250px">User</th>
+            <th style="width:250px">Tipe</th>
+            <th style="width:200px">Total</th>
+            <th style="width:200px">Keterangan</th>
             <th>Action</th>
         </tr>
         <tr>
             <td>1.</td>
             <td>Update software</td>
             <td>test2</td>
-            <td>nomor</td>                     
+            <td>nomor</td>
+            <td>Update software</td>                     
             <td>
             <div class="btn-toolbar">
                 <div class="btn-group" role="group">
@@ -74,7 +76,8 @@
             <td>2.</td>
             <td>Clean database</td>
             <td>test</td>
-            <td>nomor</td>  
+            <td>nomor</td>
+            <td>Update software</td>  
             <td> 
             <div class="btn-toolbar">
                 <div class="btn-group" role="group">
@@ -90,7 +93,8 @@
             <td>3.</td>
             <td>Cron job running</td>
             <td>test3</td>
-            <td>nomor</td>  
+            <td>nomor</td>
+            <td>Update software</td>  
             <td>
             <div class="btn-toolbar">
                 <div class="btn-group" role="group">
@@ -107,6 +111,7 @@
             <td>Fix and squish bugs</td>
             <td>test4</td>
             <td>nomor</td>  
+            <td>Update software</td>
             <td>
             <div class="btn-toolbar">
                 <div class="btn-group" role="group">
@@ -123,6 +128,7 @@
             <td>Fix and squish bugs</td>
             <td>test4</td>
             <td>nomor</td>  
+            <td>Update software</td>
             <td>
             <div class="btn-toolbar">
                 <div class="btn-group" role="group">
@@ -139,6 +145,7 @@
             <td>Fix and squish bugs</td>
             <td>test4</td>
             <td>nomor</td>  
+            <td>Update software</td>
             <td>
             <div class="btn-toolbar">
                 <div class="btn-group" role="group">
@@ -155,6 +162,7 @@
             <td>Fix and squish bugs</td>
             <td>test4</td>
             <td>nomor</td>  
+            <td>Update software</td>
             <td>
             <div class="btn-toolbar">
                 <div class="btn-group" role="group">
@@ -171,6 +179,7 @@
             <td>Fix and squish bugs</td>
             <td>test4</td>
             <td>nomor</td>  
+            <td>Update software</td>
             <td>
             <div class="btn-toolbar">
                 <div class="btn-group" role="group">
@@ -187,6 +196,7 @@
             <td>Fix and squish bugs</td>
             <td>test4</td>
             <td>nomor</td>  
+            <td>Update software</td>
             <td>
             <div class="btn-toolbar">
                 <div class="btn-group" role="group">
@@ -203,6 +213,7 @@
             <td>Fix and squish bugs</td>
             <td>test4</td>
             <td>nomor</td>  
+            <td>Update software</td>
             <td>
             <div class="btn-toolbar">
                 <div class="btn-group" role="group">
@@ -229,6 +240,7 @@
         </ul>
     </div>
 @endsection
+
 
 @section("footer")
   <!-- jQuery 3 -->

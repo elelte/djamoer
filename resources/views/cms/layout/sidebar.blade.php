@@ -54,7 +54,7 @@
           </ul>
         </li>
         <li><a href="{{ url('user') }}"><i class="fa fa-foursquare"></i> User</a></li>
-        <li><a href="{{ url('user') }}"><i class="fa fa-foursquare"></i> Akumulasi</a></li>
+        <li><a href="{{ url('akumulasi') }}"><i class="fa fa-foursquare"></i> Akumulasi</a></li>
       </ul>
     </section>
     <!-- /.sidebar -->
