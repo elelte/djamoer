@@ -39,7 +39,7 @@
                 class="form-control search-field " id="search-field" /><button class="btn btn-primary pull-right" type="submit" style="background-color:rgb(41,97,146);"><i class="glyphicon glyphicon-search"></i></button></div>
             </form> -->
 
-            <form target="#" class="form-inline">
+            <form target="/akumulasi/edit" class="form-inline">
                 <div class="form-group" style="background-color:rgba(255,255,255,0);"><label for="search-field" class="control-label" style="background-color:rgba(46,231,209,0.28);"></label><input type="search" name="search" placeholder="Search name"
                 class="form-control search-field " id="search-field" /><button class="btn btn-primary pull-right" type="submit" style="background-color:rgb(41,97,146);">Search</button></div>
             </form> 
@@ -64,7 +64,7 @@
             <td>
             <div class="btn-toolbar">
                 <div class="btn-group" role="group">
-                <a href ="/user/edit"> <button class="btn btn-success" type="button"><i class="glyphicon glyphicon-pencil"></i></button>
+                <a href ="/akumulasi/edit"> <button class="btn btn-success" type="button"><i class="glyphicon glyphicon-pencil"></i></button>
                 </a></div>
             <div class="btn-group" role="group">
                 <button class="btn btn-danger" type="button"><i class="glyphicon glyphicon-trash"></i></button>
@@ -81,7 +81,7 @@
             <td> 
             <div class="btn-toolbar">
                 <div class="btn-group" role="group">
-                <a href ="/user/edit"> <button class="btn btn-success" type="button"><i class="glyphicon glyphicon-pencil"></i></button>
+                <a href ="/akumulasi/edit"> <button class="btn btn-success" type="button"><i class="glyphicon glyphicon-pencil"></i></button>
                 </a></div>
             <div class="btn-group" role="group">
                 <button class="btn btn-danger" type="button"><i class="glyphicon glyphicon-trash"></i></button>
@@ -98,7 +98,7 @@
             <td>
             <div class="btn-toolbar">
                 <div class="btn-group" role="group">
-                <a href ="/user/edit"> <button class="btn btn-success" type="button"><i class="glyphicon glyphicon-pencil"></i></button>
+                <a href ="/akumulasi/edit"> <button class="btn btn-success" type="button"><i class="glyphicon glyphicon-pencil"></i></button>
                 </a></div>
             <div class="btn-group" role="group">
                 <button class="btn btn-danger" type="button"><i class="glyphicon glyphicon-trash"></i></button>
@@ -115,7 +115,7 @@
             <td>
             <div class="btn-toolbar">
                 <div class="btn-group" role="group">
-                <a href ="/user/edit"> <button class="btn btn-success" type="button"><i class="glyphicon glyphicon-pencil"></i></button>
+                <a href ="/akumulasi/edit"> <button class="btn btn-success" type="button"><i class="glyphicon glyphicon-pencil"></i></button>
                 </a></div>
             <div class="btn-group" role="group">
                 <button class="btn btn-danger" type="button"><i class="glyphicon glyphicon-trash"></i></button>
@@ -132,7 +132,7 @@
             <td>
             <div class="btn-toolbar">
                 <div class="btn-group" role="group">
-                <a href ="/user/edit"> <button class="btn btn-success" type="button"><i class="glyphicon glyphicon-pencil"></i></button>
+                <a href ="/akumulasi/edit"> <button class="btn btn-success" type="button"><i class="glyphicon glyphicon-pencil"></i></button>
                 </a></div>
             <div class="btn-group" role="group">
                 <button class="btn btn-danger" type="button"><i class="glyphicon glyphicon-trash"></i></button>
@@ -149,7 +149,7 @@
             <td>
             <div class="btn-toolbar">
                 <div class="btn-group" role="group">
-                <a href ="/user/edit"> <button class="btn btn-success" type="button"><i class="glyphicon glyphicon-pencil"></i></button>
+                <a href ="/akumulasi/edit"> <button class="btn btn-success" type="button"><i class="glyphicon glyphicon-pencil"></i></button>
                 </a></div>
             <div class="btn-group" role="group">
                 <button class="btn btn-danger" type="button"><i class="glyphicon glyphicon-trash"></i></button>
@@ -166,7 +166,7 @@
             <td>
             <div class="btn-toolbar">
                 <div class="btn-group" role="group">
-                <a href ="/user/edit"> <button class="btn btn-success" type="button"><i class="glyphicon glyphicon-pencil"></i></button>
+                <a href ="/akumulasi/edit"> <button class="btn btn-success" type="button"><i class="glyphicon glyphicon-pencil"></i></button>
                 </a></div>                
             <div class="btn-group" role="group">
                 <button class="btn btn-danger" type="button"><i class="glyphicon glyphicon-trash"></i></button>
@@ -183,7 +183,7 @@
             <td>
             <div class="btn-toolbar">
                 <div class="btn-group" role="group">
-                <a href ="/user/edit"> <button class="btn btn-success" type="button"><i class="glyphicon glyphicon-pencil"></i></button>
+                <a href ="/akumulasi/edit"> <button class="btn btn-success" type="button"><i class="glyphicon glyphicon-pencil"></i></button>
                 </a></div>
             <div class="btn-group" role="group">
                 <button class="btn btn-danger" type="button"><i class="glyphicon glyphicon-trash"></i></button>
@@ -200,7 +200,7 @@
             <td>
             <div class="btn-toolbar">
                 <div class="btn-group" role="group">
-                <a href ="/user/edit"> <button class="btn btn-success" type="button"><i class="glyphicon glyphicon-pencil"></i></button>
+                <a href ="/akumulasi/edit"> <button class="btn btn-success" type="button"><i class="glyphicon glyphicon-pencil"></i></button>
                 </a></div>
             <div class="btn-group" role="group">
                 <button class="btn btn-danger" type="button"><i class="glyphicon glyphicon-trash"></i></button>
@@ -217,7 +217,7 @@
             <td>
             <div class="btn-toolbar">
                 <div class="btn-group" role="group">
-                <a href ="/user/edit"> <button class="btn btn-success" type="button"><i class="glyphicon glyphicon-pencil"></i></button>
+                <a href ="/akumulasi/edit"> <button class="btn btn-success" type="button"><i class="glyphicon glyphicon-pencil"></i></button>
                 </a></div>
             <div class="btn-group" role="group">
                 <button class="btn btn-danger" type="button"><i class="glyphicon glyphicon-trash"></i></button>
@@ -229,15 +229,35 @@
      </table>
     </div>
     <!-- /.box-body -->
-    <div class="box-footer">
-        
-        <ul class="pagination pagination-sm no-margin pull-right" style="text-align:center">
-        <li><a href="#">«</a></li>
-        <li><a href="#">1</a></li>
-        <li><a href="#">2</a></li>
-        <li><a href="#">3</a></li>
-        <li><a href="#">»</a></li>
-        </ul>
+    <div class="box-footer"> 
+                <div class="col-sm-12 col-md-12">
+                    <div class="dataTables_info" id="example1_info" role="status" aria-live="polite">Showing 1 to 10 of 57 entries</div>
+                        
+                    <ul class="pagination pagination-sm no-margin pull-right no-padding">
+                        <li class="paginate_button page-item previous disabled" id="example1_previous">
+                                    <a href="#" aria-controls="example1" data-dt-idx="0" tabindex="0" class="page-link"><</a></li>
+                                    <li class="paginate_button page-item active"><a href="#" aria-controls="example1" data-dt-idx="1" tabindex="0" class="page-link">1</a></li>
+                                    <li class="paginate_button page-item "><a href="#" aria-controls="example1" data-dt-idx="2" tabindex="0" class="page-link">2</a></li>
+                                    <li class="paginate_button page-item "><a href="#" aria-controls="example1" data-dt-idx="3" tabindex="0" class="page-link">3</a></li>
+                                    <li class="paginate_button page-item "><a href="#" aria-controls="example1" data-dt-idx="4" tabindex="0" class="page-link">4</a></li>
+                                    <li class="paginate_button page-item "><a href="#" aria-controls="example1" data-dt-idx="5" tabindex="0" class="page-link">5</a></li>
+                                    <li class="paginate_button page-item next" id="example1_next"><a href="#" aria-controls="example1" data-dt-idx="7" tabindex="0" class="page-link">></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+                    {{-- <div class="col-sm-12 col-md-7"> --}}
+                        
+        </div>
+        {{-- <ul class="pagination pagination-sm no-margin pull-right" style="margin-right:20px">
+        <li><a href="/akumulasi/edit">«</a></li>
+        <li><a href="/akumulasi/edit">1</a></li>
+        <li><a href="/akumulasi/edit">2</a></li>
+        <li><a href="/akumulasi/edit">3</a></li>
+        <li><a href="/akumulasi/edit">»</a></li>
+        </ul> --}}
     </div>
 @endsection
 

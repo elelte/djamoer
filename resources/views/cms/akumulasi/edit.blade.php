@@ -27,57 +27,62 @@
   <link rel="stylesheet" href="{{asset('AdminLTE/bower_components/bootstrap-daterangepicker/daterangepicker.css')}}">
   <!-- bootstrap wysihtml5 - text editor -->
   <link rel="stylesheet" href="{{asset('AdminLTE/plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.min.css')}}">
-@endsection -->
+@endsection
 
-@section('content')           
-<div class="box box-info">
-            <form class="form-horizontal">
-              <div class="box-body">
-                <div class="form-group">
-                  <label for="inputUsername3" class="col-sm-2 control-label">Username</label>
+@section('content')        
+  <div class="box box-info">
+    <form class="form-horizontal">
+      <div class="box-body">
+        <div class="form-group">
+          <label for="inputUsername3" class="col-sm-2 control-label">Id</label>
 
-                  <div class="col-sm-3">
-                    <input type="Username" class="form-control" id="inputUsername3" placeholder="Username">
-                  </div>
-                </div>
-                <div class="form-group">
-                  <label for="inputEmail3" class="col-sm-2 control-label">Email</label>
-
-                  <div class="col-sm-3">
-                    <input type="email" class="form-control" id="inputEmail3" placeholder="Email">
-                  </div>
-                </div>
-                <div class="form-group">
-                  <label for="inputPassword3" class="col-sm-2 control-label">Password</label>
-
-                  <div class="col-sm-3">
-                    <input type="password" class="form-control" id="inputPassword3" placeholder="Password">
-                  </div>
-                </div>
-                <div class="form-group">
-                  <label for="inputTelepon3" class="col-sm-2 control-label">Telepon</label>
-
-                  <div class="col-sm-3">
-                    <input type="telepon" class="form-control" data-inputmask="&quot;mask&quot;: &quot;(999) 999-9999&quot;" data-mask=""
-                     id="inputTelepon3" placeholder="Telepon">
-                  </div>
-                </div>
-                         
-              </div>
-              <!-- /.box-body -->
-              <div class="box-footer">
-                  <div class="form-group">
-                    <div class="col-lg-2">
-                      <a href="#"><button type="submit" class="btn btn-default " style="float:right;">Batal</button></a>
-                    </div>
-                    <div class="col-sm-3">
-                      <a href="#"><button type="submit" class="btn btn-success">Simpan</button></a>
-                    </div>
-                  </div>
-                </div>
-              <!-- /.box-footer -->
-            </form>
+          <div class="col-sm-3">
+            <input type="Username" class="form-control" id="inputUsername3" placeholder="Id">
           </div>
+        </div>
+        <div class="form-group">
+          <label for="inputEmail3" class="col-sm-2 control-label">User</label>
+
+          <div class="col-sm-3">
+            <input type="email" class="form-control" id="inputEmail3" placeholder="User">
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="inputPassword3" class="col-sm-2 control-label">Tipe</label>
+
+          <div class="col-sm-3">
+            <input type="password" class="form-control" id="inputPassword3" placeholder="Tipe">
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="inputTelepon3" class="col-sm-2 control-label">Total</label>
+          <div class="col-sm-3">
+            <input type="telepon" class="form-control" data-inputmask="&quot;mask&quot;: &quot;(999) 999-9999&quot;" data-mask=""
+              id="inputTelepon3" placeholder="Total">
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="inputPassword3" class="col-sm-2 control-label">Keterangan</label>
+
+          <div class="col-sm-3">
+            <input type="password" class="form-control" id="inputPassword3" placeholder="Keterangan">
+          </div>
+        </div>      
+      </div>
+      <!-- /.box-body -->
+      <div class="box-footer">
+        <div class="form-group">
+          <div class="col-lg-2">
+            <a href="#"><button type="submit" class="btn btn-default " style="float:right;">Batal</button></a>
+          </div>
+          <div class="col-sm-3">
+            <a href="#"><button type="submit" class="btn btn-success">Simpan</button></a>
+          </div>
+        </div>
+      </div>
+      <!-- /.box-footer -->
+    </form>
+</div>
             
 
 @endsection

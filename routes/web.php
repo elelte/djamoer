@@ -18,6 +18,9 @@ Route::get('/', function () {
 Route::get('/akumulasi', function () {
     return view('cms.akumulasi.akumul');
 });
+Route::get('/akumulasi/edit', function () {
+    return view('cms.akumulasi.edit');
+});
 
 Route::get('/user', function () {
     return view('cms.user.index');

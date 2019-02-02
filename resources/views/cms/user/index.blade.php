@@ -32,13 +32,7 @@
 @section('content')
 
 <div class="box">
-    <div class="box-header with-border">
-        <!-- <h3>Bordered Table</h3>  -->
-            <!-- <form target="_self" class="form-inline">
-                <div class="form-group" style="background-color:rgba(255,255,255,0);"><label for="search-field" class="control-label" style="background-color:rgba(46,231,209,0.28);"></label><input type="search" name="search" placeholder="Search name"
-                class="form-control search-field " id="search-field" /><button class="btn btn-primary pull-right" type="submit" style="background-color:rgb(41,97,146);"><i class="glyphicon glyphicon-search"></i></button></div>
-            </form> -->
-
+    <div class="box-header with-border">      
             <form target="#" class="form-inline">
                 <div class="form-group" style="background-color:rgba(255,255,255,0);"><label for="search-field" class="control-label" style="background-color:rgba(46,231,209,0.28);"></label><input type="search" name="search" placeholder="Search name"
                 class="form-control search-field " id="search-field" /><button class="btn btn-primary pull-right" type="submit" style="background-color:rgb(41,97,146);">Search</button></div>
@@ -219,8 +213,7 @@
     </div>
     <!-- /.box-body -->
     <div class="box-footer">
-        
-        <ul class="pagination pagination-sm no-margin pull-right" style="text-align:center">
+        <ul class="pagination pagination-sm no-margin pull-right" style="text-align:center">                
         <li><a href="#">«</a></li>
         <li><a href="#">1</a></li>
         <li><a href="#">2</a></li>
