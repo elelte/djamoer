@@ -53,8 +53,10 @@
             <li><a href="pages/layout/collapsed-sidebar.html"><i class="fa fa-circle-o"></i> Collapsed Sidebar</a></li>
           </ul>
         </li>
-        <li><a href="{{ url('user') }}"><i class="fa fa-foursquare"></i> User</a></li>
-        <li><a href="{{ url('akumulasi') }}"><i class="fa fa-foursquare"></i> Akumulasi</a></li>
+        <li><a href="{{ url('user') }}"><i class="fa fa-group"></i> User</a></li>
+        <li><a href="{{ url('akumulasi') }}"><i class="fa fa-list-alt"></i> Akumulasi</a></li>
+        <li><a href="{{ url('market') }}"><i class="fa fa-shopping-bag"></i>Market</a></li>
+        <li><a href="{{ url('panen') }}"><i class="fa fa-shopping-basket"></i>Panen</a></li>
       </ul>
     </section>
     <!-- /.sidebar -->

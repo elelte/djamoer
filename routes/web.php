@@ -29,6 +29,14 @@ Route::get('/user/edit', function () {
     return view('cms.user.edit');
 });
 
+Route::get('/market', function () {
+    return view('cms.market.market');
+});
+
+Route::get('/panen', function () {
+    return view('cms.panen.panen');
+});
+
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
