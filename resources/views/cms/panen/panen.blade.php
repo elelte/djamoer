@@ -50,18 +50,14 @@
         <table class="table table-striped table-bordered">
         <tbody><tr>
             <th style="width: 10px">ID</th>
-            <th style="width:250px">User</th>
-            <th style="width:250px">Tipe</th>
-            <th style="width:200px">Total</th>
-            <th style="width:200px">Keterangan</th>
+            <th style="width:250px">Jumlah</th>
+            <th style="width:200px">Last Update</th>
             <th><i class="fa fa-cog">Action</i></th>
         </tr>
         <tr>
             <td>1.</td>
             <td>Update software</td>
-            <td>test2</td>
-            <td>nomor</td>
-            <td>Update software</td>                     
+            <td>test2</td>                                         
             <td>
             <div class="btn-toolbar">
                 <div class="btn-group" role="group">
@@ -76,9 +72,7 @@
         <tr>
             <td>2.</td>
             <td>Clean database</td>
-            <td>test</td>
-            <td>nomor</td>
-            <td>Update software</td>  
+            <td>test</td>                         
             <td> 
             <div class="btn-toolbar">
                 <div class="btn-group" role="group">
@@ -93,9 +87,7 @@
         <tr>
             <td>3.</td>
             <td>Cron job running</td>
-            <td>test3</td>
-            <td>nomor</td>
-            <td>Update software</td>  
+            <td>test3</td>                         
             <td>
             <div class="btn-toolbar">
                 <div class="btn-group" role="group">
@@ -110,9 +102,7 @@
         <tr>
             <td>4.</td>
             <td>Fix and squish bugs</td>
-            <td>test4</td>
-            <td>nomor</td>  
-            <td>Update software</td>
+            <td>test4</td>            
             <td>
             <div class="btn-toolbar">
                 <div class="btn-group" role="group">
@@ -127,9 +117,7 @@
         <tr>
             <td>5.</td>
             <td>Fix and squish bugs</td>
-            <td>test4</td>
-            <td>nomor</td>  
-            <td>Update software</td>
+            <td>test4</td>            
             <td>
             <div class="btn-toolbar">
                 <div class="btn-group" role="group">
@@ -144,9 +132,7 @@
         <tr>
             <td>6.</td>
             <td>Fix and squish bugs</td>
-            <td>test4</td>
-            <td>nomor</td>  
-            <td>Update software</td>
+            <td>test4</td>            
             <td>
             <div class="btn-toolbar">
                 <div class="btn-group" role="group">
@@ -162,8 +148,6 @@
             <td>7.</td>
             <td>Fix and squish bugs</td>
             <td>test4</td>
-            <td>nomor</td>  
-            <td>Update software</td>
             <td>
             <div class="btn-toolbar">
                 <div class="btn-group" role="group">
@@ -178,9 +162,7 @@
         <tr>
             <td>8.</td>
             <td>Fix and squish bugs</td>
-            <td>test4</td>
-            <td>nomor</td>  
-            <td>Update software</td>
+            <td>test4</td>           
             <td>
             <div class="btn-toolbar">
                 <div class="btn-group" role="group">
@@ -195,9 +177,7 @@
         <tr>
             <td>9.</td>
             <td>Fix and squish bugs</td>
-            <td>test4</td>
-            <td>nomor</td>  
-            <td>Update software</td>
+            <td>test4</td>            
             <td>
             <div class="btn-toolbar">
                 <div class="btn-group" role="group">
@@ -212,9 +192,7 @@
         <tr>
             <td>10.</td>
             <td>Fix and squish bugs</td>
-            <td>test4</td>
-            <td>nomor</td>  
-            <td>Update software</td>
+            <td>test4</td>            
             <td>
             <div class="btn-toolbar">
                 <div class="btn-group" role="group">

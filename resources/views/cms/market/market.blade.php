@@ -50,10 +50,10 @@
         <table class="table table-striped table-bordered">
         <tbody><tr>
             <th style="width: 10px">ID</th>
-            <th style="width:250px">User</th>
-            <th style="width:250px">Tipe</th>
-            <th style="width:200px">Total</th>
-            <th style="width:200px">Keterangan</th>
+            <th style="width:250px">Nama</th>
+            <th style="width:250px">Jumlah Pengiriman</th>
+            <th style="width:200px">Tanggal Pengiriman</th>
+            <th style="width:200px">Last Update</th>
             <th><i class="fa fa-cog">Action</i></th>
         </tr>
         <tr>
