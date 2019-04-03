@@ -58,7 +58,7 @@
                   <label for="inputTelepon3" class="col-sm-2 control-label">Telepon</label>
 
                   <div class="col-sm-3">
-                    <input type="telepon" class="form-control" data-inputmask="&quot;mask&quot;: &quot;(999) 999-9999&quot;" data-mask=""
+                    <input type="telephon" class="form-control" data-inputmask="&quot;mask&quot;: &quot;(999) 999-9999&quot;" data-mask=""
                      id="inputTelepon3" placeholder="Telepon">
                   </div>
                 </div>

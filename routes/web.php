@@ -27,6 +27,14 @@ Route::prefix('cms')->group(function ()  {
     Route::get('login', 'web\cms\auth@index')->name('cms.login');
 });
 
+Route::get('/market', function () {
+    return view('cms.market.market');
+});
+
+Route::get('/panen', function () {
+    return view('cms.panen.panen');
+});
+
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');

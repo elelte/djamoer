@@ -38,28 +38,31 @@
                 class="form-control search-field " id="search-field" /><button class="btn btn-primary pull-right" type="submit" style="background-color:rgb(41,97,146);"><i class="glyphicon glyphicon-search"></i></button></div>
             </form> -->
 
-            <form target="/akumulasi/edit" class="form-inline">
+            <form target="/akumulasi/edit" class="form-inline">                
                 <div class="form-group" style="background-color:rgba(255,255,255,0);"><label for="search-field" class="control-label" style="background-color:rgba(46,231,209,0.28);"></label><input type="search" name="search" placeholder="Search name"
                 class="form-control search-field " id="search-field" /><button class="btn btn-primary pull-right" type="submit" style="background-color:rgb(41,97,146);">Search</button></div>
-            </form> 
+                <button class="btn btn-primary" type="submit"><i class="fa fa-plus"></i></button>
+                </form>                
     </div>
     <!-- /.box-header -->    
     <div class="box-body">
         <table class="table table-striped table-bordered">
         <tbody><tr>
             <th style="width: 10px">ID</th>
-            <th style="width:250px">User</th>
-            <th style="width:250px">Tipe</th>
-            <th style="width:200px">Total</th>
+            <th style="width:200px">Nama</th>
+            <th style="width:150px">Tipe</th>
+            <th style="width:150px">Jumlah</th>
+            <th style="width:150px">Date/time</th>
             <th style="width:200px">Keterangan</th>
-            <th>Action</th>
+            <th><i class="fa fa-cog">Action</i></th>
         </tr>
         <tr>
             <td>1.</td>
             <td>Update software</td>
             <td>test2</td>
             <td>nomor</td>
-            <td>Update software</td>                     
+            <td>Update software</td> 
+            <td>Update software</td>                    
             <td>
             <div class="btn-toolbar">
                 <div class="btn-group" role="group">
@@ -76,6 +79,7 @@
             <td>Clean database</td>
             <td>test</td>
             <td>nomor</td>
+            <td>Update software</td>
             <td>Update software</td>  
             <td> 
             <div class="btn-toolbar">
@@ -93,7 +97,8 @@
             <td>Cron job running</td>
             <td>test3</td>
             <td>nomor</td>
-            <td>Update software</td>  
+            <td>Update software</td> 
+            <td>Update software</td> 
             <td>
             <div class="btn-toolbar">
                 <div class="btn-group" role="group">
@@ -110,6 +115,7 @@
             <td>Fix and squish bugs</td>
             <td>test4</td>
             <td>nomor</td>  
+            <td>Update software</td>
             <td>Update software</td>
             <td>
             <div class="btn-toolbar">
@@ -128,6 +134,7 @@
             <td>test4</td>
             <td>nomor</td>  
             <td>Update software</td>
+            <td>Update software</td>
             <td>
             <div class="btn-toolbar">
                 <div class="btn-group" role="group">
@@ -144,6 +151,7 @@
             <td>Fix and squish bugs</td>
             <td>test4</td>
             <td>nomor</td>  
+            <td>Update software</td>
             <td>Update software</td>
             <td>
             <div class="btn-toolbar">
@@ -162,6 +170,7 @@
             <td>test4</td>
             <td>nomor</td>  
             <td>Update software</td>
+            <td>Update software</td>
             <td>
             <div class="btn-toolbar">
                 <div class="btn-group" role="group">
@@ -178,6 +187,7 @@
             <td>Fix and squish bugs</td>
             <td>test4</td>
             <td>nomor</td>  
+            <td>Update software</td>
             <td>Update software</td>
             <td>
             <div class="btn-toolbar">
@@ -196,6 +206,7 @@
             <td>test4</td>
             <td>nomor</td>  
             <td>Update software</td>
+            <td>Update software</td>
             <td>
             <div class="btn-toolbar">
                 <div class="btn-group" role="group">
@@ -213,6 +224,7 @@
             <td>test4</td>
             <td>nomor</td>  
             <td>Update software</td>
+            <td>Update software</td>
             <td>
             <div class="btn-toolbar">
                 <div class="btn-group" role="group">
@@ -228,36 +240,25 @@
      </table>
     </div>
     <!-- /.box-body -->
-    <div class="box-footer"> 
-                <div class="col-sm-12 col-md-12">
-                    <div class="dataTables_info" id="example1_info" role="status" aria-live="polite">Showing 1 to 10 of 57 entries</div>
-                        
-                    <ul class="pagination pagination-sm no-margin pull-right no-padding">
-                        <li class="paginate_button page-item previous disabled" id="example1_previous">
-                                    <a href="#" aria-controls="example1" data-dt-idx="0" tabindex="0" class="page-link"><</a></li>
-                                    <li class="paginate_button page-item active"><a href="#" aria-controls="example1" data-dt-idx="1" tabindex="0" class="page-link">1</a></li>
-                                    <li class="paginate_button page-item "><a href="#" aria-controls="example1" data-dt-idx="2" tabindex="0" class="page-link">2</a></li>
-                                    <li class="paginate_button page-item "><a href="#" aria-controls="example1" data-dt-idx="3" tabindex="0" class="page-link">3</a></li>
-                                    <li class="paginate_button page-item "><a href="#" aria-controls="example1" data-dt-idx="4" tabindex="0" class="page-link">4</a></li>
-                                    <li class="paginate_button page-item "><a href="#" aria-controls="example1" data-dt-idx="5" tabindex="0" class="page-link">5</a></li>
-                                    <li class="paginate_button page-item next" id="example1_next"><a href="#" aria-controls="example1" data-dt-idx="7" tabindex="0" class="page-link">></a></li>
-                                </ul>
-                            </div>
-                        </div>
+    <div class="box-footer">
+            <div class="row">
+                    <div class="col-xs-6 col-sm-6 col-md-7 col-lg-6"style="padding-top:3px"><div class="dataTables_info" id="example1_info" role="status" aria-live="polite">Showing 1 to 10 of 57 entries</div></div>
+                    {{-- <div class="col"> --}}
+                        <nav class="col-md-3" style="float:right">
+                            <ul class="pagination no-margin pagination-sm pull-right">
+                                <li class="page-item"><a class="page-link" aria-label="Previous"><span aria-hidden="true">«</span></a></li>
+                                <li class="page-item"><a class="page-link">1</a></li>
+                                <li class="page-item"><a class="page-link">2</a></li>
+                                <li class="page-item"><a class="page-link">3</a></li>                                
+                                <li class="page-item"><a class="page-link" aria-label="Next"><span aria-hidden="true">»</span></a></li>
+                            </ul>
+                        </nav>
                     </div>
                 </div>
             </div>
-                    {{-- <div class="col-sm-12 col-md-7"> --}}
-                        
-        </div>
-        {{-- <ul class="pagination pagination-sm no-margin pull-right" style="margin-right:20px">
-        <li><a href="/akumulasi/edit">«</a></li>
-        <li><a href="/akumulasi/edit">1</a></li>
-        <li><a href="/akumulasi/edit">2</a></li>
-        <li><a href="/akumulasi/edit">3</a></li>
-        <li><a href="/akumulasi/edit">»</a></li>
-        </ul> --}}
-    </div>
+</div>
+    
+            
 @endsection
 
 

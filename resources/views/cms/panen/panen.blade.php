@@ -1,10 +1,10 @@
 @extends('cms.layout.main')
 
-@section('header')
+<!-- @section('header')
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title>AdminLTE 2 | Dashboard</title>
-  <!-- Tell the browser to be responsive to screen width -->
+  <-- Tell the browser to be responsive to screen width -->
   <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
   <!-- Bootstrap 3.3.7 -->
   <link rel="stylesheet" href="{{asset('AdminLTE/bower_components/bootstrap/dist/css/bootstrap.min.css')}}">
@@ -27,37 +27,41 @@
   <link rel="stylesheet" href="{{asset('AdminLTE/bower_components/bootstrap-daterangepicker/daterangepicker.css')}}">
   <!-- bootstrap wysihtml5 - text editor -->
   <link rel="stylesheet" href="{{asset('AdminLTE/plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.min.css')}}">
-@endsection
+@endsection -->
+
 
 @section('content')
-
 <div class="box">
-    <div class="box-header with-border">      
-            <form target="#" class="form-inline">
+    <div class="box-header with-border">
+        <!-- <h3>Bordered Table</h3>  -->
+            <!-- <form target="_self" class="form-inline">
                 <div class="form-group" style="background-color:rgba(255,255,255,0);"><label for="search-field" class="control-label" style="background-color:rgba(46,231,209,0.28);"></label><input type="search" name="search" placeholder="Search name"
-                    class="form-control search-field " id="search-field" /><button class="btn btn-primary pull-right" type="submit" style="background-color:rgb(41,97,146);">Search</button></div>
-                    <button class="btn btn-primary" type="submit"><i class="fa fa-user-plus"></i></button>
-                    </form>  
+                class="form-control search-field " id="search-field" /><button class="btn btn-primary pull-right" type="submit" style="background-color:rgb(41,97,146);"><i class="glyphicon glyphicon-search"></i></button></div>
+            </form> -->
+
+            <form target="/akumulasi/edit" class="form-inline">                
+                <div class="form-group" style="background-color:rgba(255,255,255,0);"><label for="search-field" class="control-label" style="background-color:rgba(46,231,209,0.28);"></label><input type="search" name="search" placeholder="Search name"
+                class="form-control search-field " id="search-field" /><button class="btn btn-primary pull-right" type="submit" style="background-color:rgb(41,97,146);">Search</button></div>
+                <button class="btn btn-primary" type="submit"><i class="fa fa-plus"></i></button>
+                </form>                
     </div>
     <!-- /.box-header -->    
     <div class="box-body">
         <table class="table table-striped table-bordered">
         <tbody><tr>
             <th style="width: 10px">ID</th>
-            <th style="width:250px">Name</th>
-            <th style="width:250px">Email</th>
-            <th style="width:200px">No.handphone</th>
-            <th>Action</th>
+            <th style="width:250px">Jumlah</th>
+            <th style="width:200px">Last Update</th>
+            <th><i class="fa fa-cog">Action</i></th>
         </tr>
         <tr>
             <td>1.</td>
             <td>Update software</td>
-            <td>test2</td>
-            <td>nomor</td>                     
+            <td>test2</td>                                         
             <td>
             <div class="btn-toolbar">
                 <div class="btn-group" role="group">
-                <a href ="user/edit"> <button class="btn btn-success" type="button"><i class="glyphicon glyphicon-pencil"></i></button>
+                <a href ="/akumulasi/edit"> <button class="btn btn-success" type="button"><i class="glyphicon glyphicon-pencil"></i></button>
                 </a></div>
             <div class="btn-group" role="group">
                 <button class="btn btn-danger" type="button"><i class="glyphicon glyphicon-trash"></i></button>
@@ -68,12 +72,11 @@
         <tr>
             <td>2.</td>
             <td>Clean database</td>
-            <td>test</td>
-            <td>nomor</td>  
+            <td>test</td>                         
             <td> 
             <div class="btn-toolbar">
                 <div class="btn-group" role="group">
-                <a href ="/user/edit"> <button class="btn btn-success" type="button"><i class="glyphicon glyphicon-pencil"></i></button>
+                <a href ="/akumulasi/edit"> <button class="btn btn-success" type="button"><i class="glyphicon glyphicon-pencil"></i></button>
                 </a></div>
             <div class="btn-group" role="group">
                 <button class="btn btn-danger" type="button"><i class="glyphicon glyphicon-trash"></i></button>
@@ -84,12 +87,11 @@
         <tr>
             <td>3.</td>
             <td>Cron job running</td>
-            <td>test3</td>
-            <td>nomor</td>  
+            <td>test3</td>                         
             <td>
             <div class="btn-toolbar">
                 <div class="btn-group" role="group">
-                <a href ="/user/edit"> <button class="btn btn-success" type="button"><i class="glyphicon glyphicon-pencil"></i></button>
+                <a href ="/akumulasi/edit"> <button class="btn btn-success" type="button"><i class="glyphicon glyphicon-pencil"></i></button>
                 </a></div>
             <div class="btn-group" role="group">
                 <button class="btn btn-danger" type="button"><i class="glyphicon glyphicon-trash"></i></button>
@@ -100,12 +102,11 @@
         <tr>
             <td>4.</td>
             <td>Fix and squish bugs</td>
-            <td>test4</td>
-            <td>nomor</td>  
+            <td>test4</td>            
             <td>
             <div class="btn-toolbar">
                 <div class="btn-group" role="group">
-                <a href ="/user/edit"> <button class="btn btn-success" type="button"><i class="glyphicon glyphicon-pencil"></i></button>
+                <a href ="/akumulasi/edit"> <button class="btn btn-success" type="button"><i class="glyphicon glyphicon-pencil"></i></button>
                 </a></div>
             <div class="btn-group" role="group">
                 <button class="btn btn-danger" type="button"><i class="glyphicon glyphicon-trash"></i></button>
@@ -116,12 +117,11 @@
         <tr>
             <td>5.</td>
             <td>Fix and squish bugs</td>
-            <td>test4</td>
-            <td>nomor</td>  
+            <td>test4</td>            
             <td>
             <div class="btn-toolbar">
                 <div class="btn-group" role="group">
-                <a href ="/user/edit"> <button class="btn btn-success" type="button"><i class="glyphicon glyphicon-pencil"></i></button>
+                <a href ="/akumulasi/edit"> <button class="btn btn-success" type="button"><i class="glyphicon glyphicon-pencil"></i></button>
                 </a></div>
             <div class="btn-group" role="group">
                 <button class="btn btn-danger" type="button"><i class="glyphicon glyphicon-trash"></i></button>
@@ -132,12 +132,11 @@
         <tr>
             <td>6.</td>
             <td>Fix and squish bugs</td>
-            <td>test4</td>
-            <td>nomor</td>  
+            <td>test4</td>            
             <td>
             <div class="btn-toolbar">
                 <div class="btn-group" role="group">
-                <a href ="/user/edit"> <button class="btn btn-success" type="button"><i class="glyphicon glyphicon-pencil"></i></button>
+                <a href ="/akumulasi/edit"> <button class="btn btn-success" type="button"><i class="glyphicon glyphicon-pencil"></i></button>
                 </a></div>
             <div class="btn-group" role="group">
                 <button class="btn btn-danger" type="button"><i class="glyphicon glyphicon-trash"></i></button>
@@ -149,11 +148,10 @@
             <td>7.</td>
             <td>Fix and squish bugs</td>
             <td>test4</td>
-            <td>nomor</td>  
             <td>
             <div class="btn-toolbar">
                 <div class="btn-group" role="group">
-                <a href ="/user/edit"> <button class="btn btn-success" type="button"><i class="glyphicon glyphicon-pencil"></i></button>
+                <a href ="/akumulasi/edit"> <button class="btn btn-success" type="button"><i class="glyphicon glyphicon-pencil"></i></button>
                 </a></div>                
             <div class="btn-group" role="group">
                 <button class="btn btn-danger" type="button"><i class="glyphicon glyphicon-trash"></i></button>
@@ -164,12 +162,11 @@
         <tr>
             <td>8.</td>
             <td>Fix and squish bugs</td>
-            <td>test4</td>
-            <td>nomor</td>  
+            <td>test4</td>           
             <td>
             <div class="btn-toolbar">
                 <div class="btn-group" role="group">
-                <a href ="/user/edit"> <button class="btn btn-success" type="button"><i class="glyphicon glyphicon-pencil"></i></button>
+                <a href ="/akumulasi/edit"> <button class="btn btn-success" type="button"><i class="glyphicon glyphicon-pencil"></i></button>
                 </a></div>
             <div class="btn-group" role="group">
                 <button class="btn btn-danger" type="button"><i class="glyphicon glyphicon-trash"></i></button>
@@ -180,12 +177,11 @@
         <tr>
             <td>9.</td>
             <td>Fix and squish bugs</td>
-            <td>test4</td>
-            <td>nomor</td>  
+            <td>test4</td>            
             <td>
             <div class="btn-toolbar">
                 <div class="btn-group" role="group">
-                <a href ="/user/edit"> <button class="btn btn-success" type="button"><i class="glyphicon glyphicon-pencil"></i></button>
+                <a href ="/akumulasi/edit"> <button class="btn btn-success" type="button"><i class="glyphicon glyphicon-pencil"></i></button>
                 </a></div>
             <div class="btn-group" role="group">
                 <button class="btn btn-danger" type="button"><i class="glyphicon glyphicon-trash"></i></button>
@@ -196,12 +192,11 @@
         <tr>
             <td>10.</td>
             <td>Fix and squish bugs</td>
-            <td>test4</td>
-            <td>nomor</td>  
+            <td>test4</td>            
             <td>
             <div class="btn-toolbar">
                 <div class="btn-group" role="group">
-                <a href ="/user/edit"> <button class="btn btn-success" type="button"><i class="glyphicon glyphicon-pencil"></i></button>
+                <a href ="/akumulasi/edit"> <button class="btn btn-success" type="button"><i class="glyphicon glyphicon-pencil"></i></button>
                 </a></div>
             <div class="btn-group" role="group">
                 <button class="btn btn-danger" type="button"><i class="glyphicon glyphicon-trash"></i></button>
@@ -229,8 +224,11 @@
                     </div>
                 </div>
             </div>
-    </div>
+</div>
+    
+            
 @endsection
+
 
 @section("footer")
   <!-- jQuery 3 -->
