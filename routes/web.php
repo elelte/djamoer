@@ -10,23 +10,21 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
+Route::prefix('cms')->group(function ()  {
 
-Route::get('/', function () {
-    return view('cms.dashboard.ind');
-});
+    Route::group(['middleware' => 'CMSAuth'], function () {
+        Route::get('/', function () {
+            return view('cms.dashboard.ind');
+        });
+        
+        Route::get('akumulasi',      'web\cms\akumulasi@viewIndex');
+        Route::get('akumulasi/edit', 'web\cms\akumulasi@viewEdit');
+    
+        Route::get('user',           'web\cms\user@viewIndex')->middleware("CMSAuth:ganalpratama@gmail.com");
+        Route::get('user/edit',      'web\cms\user@viewEdit');
+    });
 
-Route::get('/akumulasi', function () {
-    return view('cms.akumulasi.akumul');
-});
-Route::get('/akumulasi/edit', function () {
-    return view('cms.akumulasi.edit');
-});
-
-Route::get('/user', function () {
-    return view('cms.user.index');
-});
-Route::get('/user/edit', function () {
-    return view('cms.user.edit');
+    Route::get('login', 'web\cms\auth@index')->name('cms.login');
 });
 
 Auth::routes();

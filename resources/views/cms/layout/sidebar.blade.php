@@ -34,7 +34,7 @@
           </a>
           
           <ul class="treeview-menu">
-            <li class="active"><a href="index.html"><i class="fa fa-circle-o"></i> Dashboard v1</a></li>
+            <li class="active"><a href="{{ url('cms/user') }}"><i class="fa fa-circle-o"></i> Dashboard v1</a></li>
             <li><a href="index2.html"><i class="fa fa-circle-o"></i> Dashboard v2</a></li>
           </ul>
         </li>
@@ -53,8 +53,8 @@
             <li><a href="pages/layout/collapsed-sidebar.html"><i class="fa fa-circle-o"></i> Collapsed Sidebar</a></li>
           </ul>
         </li>
-        <li><a href="{{ url('user') }}"><i class="fa fa-foursquare"></i> User</a></li>
-        <li><a href="{{ url('akumulasi') }}"><i class="fa fa-foursquare"></i> Akumulasi</a></li>
+        <li><a href="{{ url('cms/user') }}"><i class="fa fa-foursquare"></i> User</a></li>
+        <li><a href="{{ url('cms/akumulasi') }}"><i class="fa fa-foursquare"></i> Akumulasi</a></li>
       </ul>
     </section>
     <!-- /.sidebar -->

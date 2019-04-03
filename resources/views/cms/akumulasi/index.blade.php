@@ -1,10 +1,9 @@
 @extends('cms.layout.main')
 
-<!-- @section('header')
+@section('header')
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title>AdminLTE 2 | Dashboard</title>
-  <-- Tell the browser to be responsive to screen width -->
   <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
   <!-- Bootstrap 3.3.7 -->
   <link rel="stylesheet" href="{{asset('AdminLTE/bower_components/bootstrap/dist/css/bootstrap.min.css')}}">
@@ -27,7 +26,7 @@
   <link rel="stylesheet" href="{{asset('AdminLTE/bower_components/bootstrap-daterangepicker/daterangepicker.css')}}">
   <!-- bootstrap wysihtml5 - text editor -->
   <link rel="stylesheet" href="{{asset('AdminLTE/plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.min.css')}}">
-@endsection -->
+@endsection 
 
 
 @section('content')
@@ -64,7 +63,7 @@
             <td>
             <div class="btn-toolbar">
                 <div class="btn-group" role="group">
-                <a href ="/akumulasi/edit"> <button class="btn btn-success" type="button"><i class="glyphicon glyphicon-pencil"></i></button>
+                <a href ="akumulasi/edit"> <button class="btn btn-success" type="button"><i class="glyphicon glyphicon-pencil"></i></button>
                 </a></div>
             <div class="btn-group" role="group">
                 <button class="btn btn-danger" type="button"><i class="glyphicon glyphicon-trash"></i></button>

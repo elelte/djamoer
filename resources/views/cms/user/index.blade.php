@@ -56,7 +56,7 @@
             <td>
             <div class="btn-toolbar">
                 <div class="btn-group" role="group">
-                <a href ="/user/edit"> <button class="btn btn-success" type="button"><i class="glyphicon glyphicon-pencil"></i></button>
+                <a href ="user/edit"> <button class="btn btn-success" type="button"><i class="glyphicon glyphicon-pencil"></i></button>
                 </a></div>
             <div class="btn-group" role="group">
                 <button class="btn btn-danger" type="button"><i class="glyphicon glyphicon-trash"></i></button>
