@@ -32,21 +32,21 @@
 	<div class="limiter">
 		<div class="container-login100">
 			<div class="wrap-login100">
-				<form class="login100-form validate-form">
+				{{ Form::open(['url' => "cms/login/post", "class" => "login100-form validate-form"]) }}
 					<span class="login100-form-title p-b-43">
 						Login to continue
 					</span>
 					
 					
 					<div class="wrap-input100 validate-input" data-validate = "Valid email is required: ex@abc.xyz">
-						<input class="input100" type="text" name="email">
+						{{ Form::text('email', '', ["class" =>"input100"]) }}
 						<span class="focus-input100"></span>
 						<span class="label-input100">Email</span>
 					</div>
 					
 					
 					<div class="wrap-input100 validate-input" data-validate="Password is required">
-						<input class="input100" type="password" name="pass">
+						{{ Form::password('pass', ["class" =>"input100"]) }}
 						<span class="focus-input100"></span>
 						<span class="label-input100">Password</span>
 					</div>
@@ -68,9 +68,7 @@
 			
 
 					<div class="container-login100-form-btn">
-						<button class="login100-form-btn">
-							Login
-						</button>
+							{{ Form::submit('Login', ["class" =>"login100-form-btn"]) }}
 					</div>
 					
 					<div class="text-center p-t-46 p-b-20">
@@ -88,7 +86,7 @@
 							<i class="fa fa-twitter" aria-hidden="true"></i>
 						</a>
 					</div>
-				</form>
+				{{ Form::close() }}
 
 				<div class="login100-more" style="background-image: url({{asset('login_v18/images/bg-01.jpg')}});">
 				</div>

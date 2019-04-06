@@ -20,11 +20,13 @@ Route::prefix('cms')->group(function ()  {
         Route::get('akumulasi',      'web\cms\akumulasi@viewIndex');
         Route::get('akumulasi/edit', 'web\cms\akumulasi@viewEdit');
     
-        Route::get('user',           'web\cms\user@viewIndex')->middleware("CMSAuth:ganalpratama@gmail.com");
-        Route::get('user/edit',      'web\cms\user@viewEdit');
+        Route::get('user',           'web\cms\user_controller@viewIndex')->middleware("CMSAuth:ganalpratama@gmail.com");
+        Route::get('user/edit/{id}',  'web\cms\user_controller@viewEdit');
     });
 
-    Route::get('login', 'web\cms\auth@index')->name('cms.login');
+    Route::get('login',        'web\cms\auth_controller@index')->name('cms.login');
+    Route::post('login/post',  'web\cms\auth_controller@loginProcess');
+    Route::get('logout',      'web\cms\auth_controller@logout');
 });
 
 Route::get('/market', function () {

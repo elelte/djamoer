@@ -13,8 +13,7 @@ class admin_roleTS extends Seeder
      */
     public function run()
     {
-        //
-        admins_role::truncate();
+        admins_role::query()->delete();
 
         $role        = new admins_role();
         $role->name  = "Superadmin";

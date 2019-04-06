@@ -15,13 +15,15 @@ class CMSAuth
      */
     public function handle($request, Closure $next)
     {
+        if($request->session()->get("user_id") === null){
+            return redirect("cms/login");
+        }
+        return $next($request);
         // // check if the request is from mobile device
         // if ($request->name == "ganalpratama@gmail.com") {
         //     return redirect('google.com');
         // }
         
-        // return redirect("cms/login");
-        // // return $next($request);
-        return response($request);
+        // return response($request);
     }
 }

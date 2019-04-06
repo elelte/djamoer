@@ -49,166 +49,26 @@
             <th style="width:200px">No.handphone</th>
             <th>Action</th>
         </tr>
-        <tr>
-            <td>1.</td>
-            <td>Update software</td>
-            <td>test2</td>
-            <td>nomor</td>                     
-            <td>
-            <div class="btn-toolbar">
+
+        @foreach ($data as $d)
+            <tr>
+                <td>{{ $d->id }}</td>
+                <td>{{ $d->name }}</td>
+                <td>{{ $d->email }}</td>
+                <td>{{ $d->email }}</td>                     
+                <td>
+                <div class="btn-toolbar">
+                    <div class="btn-group" role="group">
+                    <a href ="user/edit/{{ $d->id }}"> <button class="btn btn-success" type="button"><i class="glyphicon glyphicon-pencil"></i></button>
+                    </a></div>
                 <div class="btn-group" role="group">
-                <a href ="user/edit"> <button class="btn btn-success" type="button"><i class="glyphicon glyphicon-pencil"></i></button>
-                </a></div>
-            <div class="btn-group" role="group">
-                <button class="btn btn-danger" type="button"><i class="glyphicon glyphicon-trash"></i></button>
+                    <button class="btn btn-danger" type="button"><i class="glyphicon glyphicon-trash"></i></button>
+                    </div>
                 </div>
-            </div>
-            </td>
-        </tr>
-        <tr>
-            <td>2.</td>
-            <td>Clean database</td>
-            <td>test</td>
-            <td>nomor</td>  
-            <td> 
-            <div class="btn-toolbar">
-                <div class="btn-group" role="group">
-                <a href ="/user/edit"> <button class="btn btn-success" type="button"><i class="glyphicon glyphicon-pencil"></i></button>
-                </a></div>
-            <div class="btn-group" role="group">
-                <button class="btn btn-danger" type="button"><i class="glyphicon glyphicon-trash"></i></button>
-                </div>
-            </div>
-            </td>
-        </tr>
-        <tr>
-            <td>3.</td>
-            <td>Cron job running</td>
-            <td>test3</td>
-            <td>nomor</td>  
-            <td>
-            <div class="btn-toolbar">
-                <div class="btn-group" role="group">
-                <a href ="/user/edit"> <button class="btn btn-success" type="button"><i class="glyphicon glyphicon-pencil"></i></button>
-                </a></div>
-            <div class="btn-group" role="group">
-                <button class="btn btn-danger" type="button"><i class="glyphicon glyphicon-trash"></i></button>
-                </div>
-            </div>
-            </td>            
-        </tr>
-        <tr>
-            <td>4.</td>
-            <td>Fix and squish bugs</td>
-            <td>test4</td>
-            <td>nomor</td>  
-            <td>
-            <div class="btn-toolbar">
-                <div class="btn-group" role="group">
-                <a href ="/user/edit"> <button class="btn btn-success" type="button"><i class="glyphicon glyphicon-pencil"></i></button>
-                </a></div>
-            <div class="btn-group" role="group">
-                <button class="btn btn-danger" type="button"><i class="glyphicon glyphicon-trash"></i></button>
-                </div>
-            </div>
-            </td>            
-        </tr>
-        <tr>
-            <td>5.</td>
-            <td>Fix and squish bugs</td>
-            <td>test4</td>
-            <td>nomor</td>  
-            <td>
-            <div class="btn-toolbar">
-                <div class="btn-group" role="group">
-                <a href ="/user/edit"> <button class="btn btn-success" type="button"><i class="glyphicon glyphicon-pencil"></i></button>
-                </a></div>
-            <div class="btn-group" role="group">
-                <button class="btn btn-danger" type="button"><i class="glyphicon glyphicon-trash"></i></button>
-                </div>
-            </div>
-            </td>            
-        </tr>
-        <tr>
-            <td>6.</td>
-            <td>Fix and squish bugs</td>
-            <td>test4</td>
-            <td>nomor</td>  
-            <td>
-            <div class="btn-toolbar">
-                <div class="btn-group" role="group">
-                <a href ="/user/edit"> <button class="btn btn-success" type="button"><i class="glyphicon glyphicon-pencil"></i></button>
-                </a></div>
-            <div class="btn-group" role="group">
-                <button class="btn btn-danger" type="button"><i class="glyphicon glyphicon-trash"></i></button>
-                </div>
-            </div>
-            </td>            
-        </tr>
-        <tr>
-            <td>7.</td>
-            <td>Fix and squish bugs</td>
-            <td>test4</td>
-            <td>nomor</td>  
-            <td>
-            <div class="btn-toolbar">
-                <div class="btn-group" role="group">
-                <a href ="/user/edit"> <button class="btn btn-success" type="button"><i class="glyphicon glyphicon-pencil"></i></button>
-                </a></div>                
-            <div class="btn-group" role="group">
-                <button class="btn btn-danger" type="button"><i class="glyphicon glyphicon-trash"></i></button>
-                </div>
-            </div>
-            </td>            
-        </tr>
-        <tr>
-            <td>8.</td>
-            <td>Fix and squish bugs</td>
-            <td>test4</td>
-            <td>nomor</td>  
-            <td>
-            <div class="btn-toolbar">
-                <div class="btn-group" role="group">
-                <a href ="/user/edit"> <button class="btn btn-success" type="button"><i class="glyphicon glyphicon-pencil"></i></button>
-                </a></div>
-            <div class="btn-group" role="group">
-                <button class="btn btn-danger" type="button"><i class="glyphicon glyphicon-trash"></i></button>
-                </div>
-            </div>
-            </td>            
-        </tr>
-        <tr>
-            <td>9.</td>
-            <td>Fix and squish bugs</td>
-            <td>test4</td>
-            <td>nomor</td>  
-            <td>
-            <div class="btn-toolbar">
-                <div class="btn-group" role="group">
-                <a href ="/user/edit"> <button class="btn btn-success" type="button"><i class="glyphicon glyphicon-pencil"></i></button>
-                </a></div>
-            <div class="btn-group" role="group">
-                <button class="btn btn-danger" type="button"><i class="glyphicon glyphicon-trash"></i></button>
-                </div>
-            </div>
-            </td>            
-        </tr>
-        <tr>
-            <td>10.</td>
-            <td>Fix and squish bugs</td>
-            <td>test4</td>
-            <td>nomor</td>  
-            <td>
-            <div class="btn-toolbar">
-                <div class="btn-group" role="group">
-                <a href ="/user/edit"> <button class="btn btn-success" type="button"><i class="glyphicon glyphicon-pencil"></i></button>
-                </a></div>
-            <div class="btn-group" role="group">
-                <button class="btn btn-danger" type="button"><i class="glyphicon glyphicon-trash"></i></button>
-                </div>
-            </div>
-            </td>            
-        </tr>
+                </td>
+            </tr>
+        @endforeach
+
         </tbody>
      </table>
     </div>

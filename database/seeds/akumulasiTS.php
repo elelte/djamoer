@@ -13,21 +13,20 @@ class akumulasiTS extends Seeder
      */
     public function run()
     {
-        //
-        akumulasi::truncate();
+        akumulasi::query()->delete();
 
-        $akm             = new akumulasi();
-        $akm->id_user    = 1;
-        $akm->tipe       = 1;
-        $akm->total      = 10000;
-        $akm->keterangan = "Nabung";
-        $akm->save();
+        $akm1             = new akumulasi();
+        $akm1->id_user    = 1;
+        $akm1->tipe       = 1;
+        $akm1->total      = 10000;
+        $akm1->keterangan = "Nabung";
+        $akm1->save();
 
-        $akm             = new akumulasi();
-        $akm->id_user    = 1;
-        $akm->tipe       = 1;
-        $akm->total      = 20000;
-        $akm->keterangan = "Apa ya";
-        $akm->save();
+        $akm2             = new akumulasi();
+        $akm2->id_user    = 1;
+        $akm2->tipe       = 1;
+        $akm2->total      = 20000;
+        $akm2->keterangan = "Apa ya";
+        $akm2->save();
     }
 }

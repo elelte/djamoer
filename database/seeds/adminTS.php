@@ -13,10 +13,10 @@ class adminTS extends Seeder
      */
     public function run()
     {
-        //
-        admins::truncate();
+        admins::query()->delete();
 
         $adm           = new admins();
+        $adm->email    = "ganalpratama@gmail.com";
         $adm->username = "gaenael";
         $adm->password = Hash::make("12345abc");
         $adm->role     = "Superadmin";
