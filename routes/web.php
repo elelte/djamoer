@@ -20,21 +20,22 @@ Route::prefix('cms')->group(function ()  {
         Route::get('akumulasi',      'web\cms\akumulasi@viewIndex');
         Route::get('akumulasi/edit', 'web\cms\akumulasi@viewEdit');
     
-        Route::get('user',           'web\cms\user_controller@viewIndex')->middleware("CMSAuth:ganalpratama@gmail.com");
+        Route::get('user',            'web\cms\user_controller@viewIndex');
         Route::get('user/edit/{id}',  'web\cms\user_controller@viewEdit');
+        Route::post('user/edit/{id}', 'web\cms\user_controller@updateUser');
+        Route::get('user/add',        'web\cms\user_controller@viewAdd');
+        Route::post('user/add',       'web\cms\user_controller@createUser');
+
+        Route::get('market',      'web\cms\akumulasi@viewIndex');
+        Route::get('market/edit', 'web\cms\akumulasi@viewEdit');
+
+        Route::get('panen',      'web\cms\akumulasi@viewIndex');
+        Route::get('panen/edit', 'web\cms\akumulasi@viewEdit');
     });
 
     Route::get('login',        'web\cms\auth_controller@index')->name('cms.login');
     Route::post('login/post',  'web\cms\auth_controller@loginProcess');
     Route::get('logout',      'web\cms\auth_controller@logout');
-});
-
-Route::get('/market', function () {
-    return view('cms.market.market');
-});
-
-Route::get('/panen', function () {
-    return view('cms.panen.panen');
 });
 
 Auth::routes();

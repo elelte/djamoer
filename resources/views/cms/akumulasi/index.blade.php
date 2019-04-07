@@ -32,28 +32,22 @@
 @section('content')
 <div class="box">
     <div class="box-header with-border">
-        <!-- <h3>Bordered Table</h3>  -->
-            <!-- <form target="_self" class="form-inline">
-                <div class="form-group" style="background-color:rgba(255,255,255,0);"><label for="search-field" class="control-label" style="background-color:rgba(46,231,209,0.28);"></label><input type="search" name="search" placeholder="Search name"
-                class="form-control search-field " id="search-field" /><button class="btn btn-primary pull-right" type="submit" style="background-color:rgb(41,97,146);"><i class="glyphicon glyphicon-search"></i></button></div>
-            </form> -->
-
             <form target="/akumulasi/edit" class="form-inline">                
                 <div class="form-group" style="background-color:rgba(255,255,255,0);"><label for="search-field" class="control-label" style="background-color:rgba(46,231,209,0.28);"></label><input type="search" name="search" placeholder="Search name"
                 class="form-control search-field " id="search-field" /><button class="btn btn-primary pull-right" type="submit" style="background-color:rgb(41,97,146);">Search</button></div>
                 <button class="btn btn-primary" type="submit"><i class="fa fa-plus"></i></button>
-                </form>                
+            </form>                
     </div>
     <!-- /.box-header -->    
     <div class="box-body">
         <table class="table table-striped table-bordered">
         <tbody><tr>
-            <th style="width: 10px">ID</th>
-            <th style="width:200px">Nama</th>
-            <th style="width:150px">Tipe</th>
-            <th style="width:150px">Jumlah</th>
-            <th style="width:150px">Date/time</th>
-            <th style="width:200px">Keterangan</th>
+            <th scope="col">ID</th>
+            <th scope="col">Nama</th>
+            <th scope="col">Tipe</th>
+            <th scope="col">Jumlah</th>
+            <th scope="col">Date/time</th>
+            <th scope="col">Keterangan</th>
             <th><i class="fa fa-cog">Action</i></th>
         </tr>
         <tr>

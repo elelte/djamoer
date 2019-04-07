@@ -31,7 +31,7 @@
 
 @section('content')           
 <div class="box box-info">
-  <form class="form-horizontal">
+  {{ Form::open(['url' => "cms/user/edit/$data->id", "class" => "form-horizontal"]) }}
     <div class="box-body">
       <div class="form-group">
         {{ Form::label('lblUsername', 'Username', array('class' => 'col-sm-2 control-label')) }}
@@ -46,9 +46,9 @@
         </div>
       </div>
       <div class="form-group">
-        {{ Form::label('lblPhone', 'Telepon', array('class' => 'col-sm-2 control-label')) }}
+        {{ Form::label('lblPhone', 'Phone number', array('class' => 'col-sm-2 control-label')) }}
         <div class="col-sm-3">
-            {{ Form::text("telepon", $data->phone, ["class" =>"form-control", "id" => "inputTelepon3", "placeholder" => "021XXXXX"])}}
+            {{ Form::text("phone", $data->phone, ["class" =>"form-control", "id" => "inputTelepon3", "placeholder" => "021XXXXX"])}}
         </div>
       </div>
                 
@@ -56,16 +56,13 @@
     <!-- /.box-body -->
     <div class="box-footer">
         <div class="form-group">
-          <div class="col-lg-2">
-            <a href="#"><button type="submit" class="btn btn-default " style="float:right;">Batal</button></a>
-          </div>
           <div class="col-sm-3">
             <a href="#"><button type="submit" class="btn btn-success">Simpan</button></a>
           </div>
         </div>
       </div>
     <!-- /.box-footer -->
-  </form>
+  {{ Form::close() }}
 </div>
             
 

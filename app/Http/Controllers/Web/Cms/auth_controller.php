@@ -31,7 +31,7 @@ class auth_controller extends Controller
     public function loginProcess(Request $request){
         $email    = $request->get('email');
         $admins   = admins::where('email',$email)
-                        ->get();
+                          ->get();
         
         if (count($admins) > 0){
             $admin = $admins[0];

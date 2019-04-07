@@ -38,30 +38,10 @@
             <li><a href="index2.html"><i class="fa fa-circle-o"></i> Dashboard v2</a></li>
           </ul>
         </li>
-        <li class="treeview">
-          <a href="#">
-            <i class="fa fa-files-o"></i>
-            <span>Layout Options</span>
-            <span class="pull-right-container">
-              <span class="label label-primary pull-right">4</span>
-            </span>
-          </a>
-          <ul class="treeview-menu">
-            <li><a href="pages/layo ut/top-nav.html"><i class="fa fa-circle-o"></i> Top Navigation</a></li>
-            <li><a href="pages/layout/boxed.html"><i class="fa fa-circle-o"></i> Boxed</a></li>
-            <li><a href="pages/layout/fixed.html"><i class="fa fa-circle-o"></i> Fixed</a></li>
-            <li><a href="pages/layout/collapsed-sidebar.html"><i class="fa fa-circle-o"></i> Collapsed Sidebar</a></li>
-          </ul>
-        </li>
-<<<<<<< HEAD
-        <li><a href="{{ url('cms/user') }}"><i class="fa fa-foursquare"></i> User</a></li>
-        <li><a href="{{ url('cms/akumulasi') }}"><i class="fa fa-foursquare"></i> Akumulasi</a></li>
-=======
-        <li><a href="{{ url('user') }}"><i class="fa fa-group"></i> User</a></li>
-        <li><a href="{{ url('akumulasi') }}"><i class="fa fa-list-alt"></i> Akumulasi</a></li>
-        <li><a href="{{ url('market') }}"><i class="fa fa-shopping-bag"></i>Market</a></li>
-        <li><a href="{{ url('panen') }}"><i class="fa fa-shopping-basket"></i>Panen</a></li>
->>>>>>> 571fa6bb3fd34ddba54f88667929b1b8f3ec3f65
+        <li><a href="{{ url('cms/user') }}"><i class="fa fa-group"></i> User</a></li>
+        <li><a href="{{ url('cms/akumulasi') }}"><i class="fa fa-list-alt"></i> Akumulasi</a></li>
+        <li><a href="{{ url('cms/market') }}"><i class="fa fa-shopping-bag"></i>Market</a></li>
+        <li><a href="{{ url('cms/panen') }}"><i class="fa fa-shopping-basket"></i>Panen</a></li>
       </ul>
     </section>
     <!-- /.sidebar -->

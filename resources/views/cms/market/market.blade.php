@@ -1,10 +1,9 @@
 @extends('cms.layout.main')
 
-<!-- @section('header')
+@section('header')
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title>AdminLTE 2 | Dashboard</title>
-  <-- Tell the browser to be responsive to screen width -->
   <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
   <!-- Bootstrap 3.3.7 -->
   <link rel="stylesheet" href="{{asset('AdminLTE/bower_components/bootstrap/dist/css/bootstrap.min.css')}}">
@@ -27,23 +26,17 @@
   <link rel="stylesheet" href="{{asset('AdminLTE/bower_components/bootstrap-daterangepicker/daterangepicker.css')}}">
   <!-- bootstrap wysihtml5 - text editor -->
   <link rel="stylesheet" href="{{asset('AdminLTE/plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.min.css')}}">
-@endsection -->
+@endsection
 
 
 @section('content')
 <div class="box">
     <div class="box-header with-border">
-        <!-- <h3>Bordered Table</h3>  -->
-            <!-- <form target="_self" class="form-inline">
-                <div class="form-group" style="background-color:rgba(255,255,255,0);"><label for="search-field" class="control-label" style="background-color:rgba(46,231,209,0.28);"></label><input type="search" name="search" placeholder="Search name"
-                class="form-control search-field " id="search-field" /><button class="btn btn-primary pull-right" type="submit" style="background-color:rgb(41,97,146);"><i class="glyphicon glyphicon-search"></i></button></div>
-            </form> -->
-
-            <form target="/akumulasi/edit" class="form-inline">                
-                <div class="form-group" style="background-color:rgba(255,255,255,0);"><label for="search-field" class="control-label" style="background-color:rgba(46,231,209,0.28);"></label><input type="search" name="search" placeholder="Search name"
-                class="form-control search-field " id="search-field" /><button class="btn btn-primary pull-right" type="submit" style="background-color:rgb(41,97,146);">Search</button></div>
-                <button class="btn btn-primary" type="submit"><i class="fa fa-plus"></i></button>
-                </form>                
+        <form target="/akumulasi/edit" class="form-inline">                
+            <div class="form-group" style="background-color:rgba(255,255,255,0);"><label for="search-field" class="control-label" style="background-color:rgba(46,231,209,0.28);"></label><input type="search" name="search" placeholder="Search name"
+            class="form-control search-field " id="search-field" /><button class="btn btn-primary pull-right" type="submit" style="background-color:rgb(41,97,146);">Search</button></div>
+            <button class="btn btn-primary" type="submit"><i class="fa fa-plus"></i></button>
+        </form>                
     </div>
     <!-- /.box-header -->    
     <div class="box-body">

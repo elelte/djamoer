@@ -1,10 +1,10 @@
 @extends('cms.layout.main')
 
-@section('header')
+ @section('header')
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title>AdminLTE 2 | Dashboard</title>
-  <!-- Tell the browser to be responsive to screen width -->
+  
   <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
   <!-- Bootstrap 3.3.7 -->
   <link rel="stylesheet" href="{{asset('AdminLTE/bower_components/bootstrap/dist/css/bootstrap.min.css')}}">
@@ -29,72 +29,45 @@
   <link rel="stylesheet" href="{{asset('AdminLTE/plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.min.css')}}">
 @endsection
 
-@section('content')
-
-<div class="box">
-    <div class="box-header with-border">      
-        <form target="#" class="form-inline">
-            <div class="form-group" style="background-color:rgba(255,255,255,0);"><label for="search-field" class="control-label" style="background-color:rgba(46,231,209,0.28);"></label>
-                <input type="search" name="search" placeholder="Search name" class="form-control search-field " id="search-field" />
-                <button class="btn btn-primary pull-right" type="submit" style="background-color:rgb(41,97,146);">Search</button>
-            </div>
-                <a href ="{{ url('cms/user/add') }}"> 
-                    <button class="btn btn-primary" type="button"><i class="fa fa-user-plus"></i></button>
-                </a>
-        </form>  
-    </div>
-    <!-- /.box-header -->    
+@section('content')           
+<div class="box box-info">
+  {{ Form::open(['url' => "cms/user/add", "class" => "form-horizontal"]) }}
     <div class="box-body">
-        <table class="table table-striped table-bordered">
-            <tbody>
-            <tr>
-                <th scope="col">ID</th>
-                <th scope="col">Name</th>
-                <th scope="col">Email</th>
-                <th scope="col">No.handphone</th>
-                <th scope="col">Action</th>
-            </tr>
-
-            @foreach ($data as $d)
-            <tr>
-                <td>{{ $d->id }}</td>
-                <td>{{ $d->name }}</td>
-                <td>{{ $d->email }}</td>
-                <td>{{ $d->phone }}</td>                     
-                <td>
-                    <div class="btn-toolbar">
-                        <div class="btn-group" role="group">
-                            <a href ="{{ url('cms/user/edit', $d->id) }}"> 
-                                <button class="btn btn-success" type="button">
-                                    <i class="glyphicon glyphicon-pencil">
-                                    </i>
-                                </button>
-                            </a>
-                    </div>
-                    <div class="btn-group" role="group">
-                        <button class="btn btn-danger" type="button"><i class="glyphicon glyphicon-trash"></i></button>
-                        </div>
-                    </div>
-                </td>
-            </tr>
-            @endforeach
-
-        </tbody>
-     </table>
+      <div class="form-group">
+        {{ Form::label('lblUsername', 'Username', array('class' => 'col-sm-2 control-label')) }}
+        <div class="col-sm-3">
+          {{ Form::text("name", "", ["class" =>"form-control", "placeholder" => "Name"]) }}
+        </div>
+      </div>
+      <div class="form-group">
+        {{ Form::label('lblEmail', 'Email', array('class' => 'col-sm-2 control-label')) }}
+        <div class="col-sm-3">
+          {{ Form::text("email", "", ["class" =>"form-control", "id" => "inputEmail3", "placeholder" => "Email"]) }}
+        </div>
+      </div>
+      <div class="form-group">
+        {{ Form::label('lblPhone', 'Phone number', array('class' => 'col-sm-2 control-label')) }}
+        <div class="col-sm-3">
+            {{ Form::text("phone", "", ["class" =>"form-control", "id" => "inputTelepon3", "placeholder" => "021XXXXX"])}}
+        </div>
+      </div>
+                
     </div>
     <!-- /.box-body -->
     <div class="box-footer">
-            <div class="row">
-                    <div class="col-xs-6 col-sm-6 col-md-7 col-lg-6"style="padding-top:3px">
-                        <div class="dataTables_info" id="example1_info" role="status" aria-live="polite"> Showing 1 to 10 of {{ count($data) }} users </div>
-                    </div>
-                    <div class="col">
-                        {{ $data->links() }}
-                    </div>
-                </div>
-            </div>
-    </div>
+        <div class="form-group">
+          <div class="col-sm-3">
+            <a href="#"><button type="submit" class="btn btn-success">Simpan</button></a>
+          </div>
+        </div>
+      </div>
+    <!-- /.box-footer -->
+  {{ Form::close() }}
+</div>
+            
+
 @endsection
+
 
 @section("footer")
   <!-- jQuery 3 -->
