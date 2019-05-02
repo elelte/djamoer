@@ -13,9 +13,7 @@
 Route::prefix('cms')->group(function ()  {
 
     Route::group(['middleware' => 'CMSAuth'], function () {
-        Route::get('/', function () {
-            return view('cms.dashboard.ind');
-        });
+        Route::get('/', 'web\cms\auth_controller@toHome')->name('cms-home');;
         
         Route::get('akumulasi',      'web\cms\akumulasi@viewIndex');
         Route::get('akumulasi/edit', 'web\cms\akumulasi@viewEdit');

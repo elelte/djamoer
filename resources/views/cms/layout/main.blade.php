@@ -17,9 +17,8 @@
             <!-- Content Header (Page header) -->
         
             <div class="content-header">
-                <h1>
-                Dashboard
-                <small>Control panel</small>
+                <h1> Welcome
+                <small>Dashboard</small>
                 </h1>
                 <ol class="breadcrumb">
                 <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>

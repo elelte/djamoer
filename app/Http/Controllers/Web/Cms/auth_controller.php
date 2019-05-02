@@ -38,7 +38,8 @@ class auth_controller extends Controller
             $pass  = $request->get('pass');
             if(Hash::check($pass, $admin->password)) {
                 $request->session()->put('user_id', $admin->id);
-                return redirect('cms/');
+                $request->session()->put('user_name', $admin->username);
+                return redirect()->route('cms-home', [$admin]);
             }
             else{
                 print("salah 1");
@@ -52,5 +53,9 @@ class auth_controller extends Controller
     public function logout(Request $request){
         $request->session()->flush();
         return redirect('cms/login');
+    }
+
+    public function toHome(Request $request){
+        return view('cms.dashboard.ind');
     }
 }
