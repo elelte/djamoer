@@ -27,8 +27,8 @@ Route::prefix('cms')->group(function ()  {
         Route::get('market',      'web\cms\akumulasi@viewIndex');
         Route::get('market/edit', 'web\cms\akumulasi@viewEdit');
 
-        Route::get('panen',      'web\cms\akumulasi@viewIndex');
-        Route::get('panen/edit', 'web\cms\akumulasi@viewEdit');
+        Route::get('panen',      'web\cms\panen_controller@viewIndex');
+        Route::get('panen/edit', 'web\cms\panen_controller@viewEdit');
     });
 
     Route::get('login',        'web\cms\auth_controller@index')->name('cms.login');

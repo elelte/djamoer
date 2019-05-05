@@ -30,33 +30,79 @@
 
 
 @section('content')
-<div class="box">
-    <div class="box-header with-border">
-        <!-- <h3>Bordered Table</h3>  -->
-            <!-- <form target="_self" class="form-inline">
-                <div class="form-group" style="background-color:rgba(255,255,255,0);"><label for="search-field" class="control-label" style="background-color:rgba(46,231,209,0.28);"></label><input type="search" name="search" placeholder="Search name"
-                class="form-control search-field " id="search-field" /><button class="btn btn-primary pull-right" type="submit" style="background-color:rgb(41,97,146);"><i class="glyphicon glyphicon-search"></i></button></div>
-            </form> -->
 
-            <form target="/akumulasi/edit" class="form-inline">                
-                <div class="form-group" style="background-color:rgba(255,255,255,0);"><label for="search-field" class="control-label" style="background-color:rgba(46,231,209,0.28);"></label><input type="search" name="search" placeholder="Search name"
-                class="form-control search-field " id="search-field" /><button class="btn btn-primary pull-right" type="submit" style="background-color:rgb(41,97,146);">Search</button></div>
-                <button class="btn btn-primary" type="submit"><i class="fa fa-plus"></i></button>
-                </form>                
+<div class="row">
+        <div class="col-lg-3 col-xs-6">
+          <!-- small box -->
+          <div class="small-box bg-green">
+            <div class="inner">
+              <h3>53<sup style="font-size: 20px">%</sup></h3>
+
+              <p>Bounce Rate</p>
+            </div>
+            <div class="icon">
+              <i class="ion ion-stats-bars"></i>
+            </div>
+            <a href="#" class="small-box-footer">
+              More info <i class="fa fa-arrow-circle-right"></i>
+            </a>
+          </div>
+        </div>
+        <!-- ./col -->
+        <div class="col-lg-3 col-xs-6">
+          <!-- small box -->
+          <div class="small-box bg-yellow">
+            <div class="inner">
+              <h3>44</h3>
+
+              <p>User Registrations</p>
+            </div>
+            <div class="icon">
+              <i class="ion ion-person-add"></i>
+            </div>
+            <a href="#" class="small-box-footer">
+              More info <i class="fa fa-arrow-circle-right"></i>
+            </a>
+          </div>
+        </div>
+        <!-- ./col -->
+        <div class="col-lg-3 col-xs-6">
+          <!-- small box -->
+          <div class="small-box bg-red">
+            <div class="inner">
+              <h3>65</h3>
+
+              <p>Unique Visitors</p>
+            </div>
+            <div class="icon">
+              <i class="ion ion-pie-graph"></i>
+            </div>
+            <a href="#" class="small-box-footer">
+              More info <i class="fa fa-arrow-circle-right"></i>
+            </a>
+          </div>
+        </div>
+        <!-- ./col -->
+      </div>
+<div class="box">
+
+    <div class="box-header with-border">
     </div>
     <!-- /.box-header -->    
     <div class="box-body">
         <table class="table table-striped table-bordered">
         <tbody><tr>
-            <th style="width: 10px">ID</th>
-            <th style="width:250px">Jumlah</th>
-            <th style="width:200px">Last Update</th>
-            <th><i class="fa fa-cog">Action</i></th>
+            <th>ID</th>
+            <th>Type</th>
+            <th>Username</th>
+            <th>Jumlah</th>
+            <th><i class="fa fa-cog"></i> Action</th>
         </tr>
         <tr>
             <td>1.</td>
-            <td>Update software</td>
-            <td>test2</td>                                         
+            <td>Test</td>
+            <td>Gan</td>
+            <td>3 KG</td>                                         
             <td>
             <div class="btn-toolbar">
                 <div class="btn-group" role="group">
@@ -71,7 +117,8 @@
         <tr>
             <td>2.</td>
             <td>Clean database</td>
-            <td>test</td>                         
+            <td>test</td>       
+            <td>test2</td>                     
             <td> 
             <div class="btn-toolbar">
                 <div class="btn-group" role="group">
@@ -86,7 +133,8 @@
         <tr>
             <td>3.</td>
             <td>Cron job running</td>
-            <td>test3</td>                         
+            <td>test3</td>     
+            <td>test2</td>                       
             <td>
             <div class="btn-toolbar">
                 <div class="btn-group" role="group">

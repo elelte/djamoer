@@ -13,8 +13,7 @@ use Illuminate\Http\Request;
 |
 */
 
-Route::post("/user/store", "api\usersController@store");
-Route::post("/user/log",   "api\usersController@logs");
+Route::post("/auth/login",   "api\usersController@logs");
 
 // Route::get("/user/detail/{name}", "api\usersController@detail")->middleware("MWAuth");
 

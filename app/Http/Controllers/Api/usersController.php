@@ -12,8 +12,8 @@ class usersController extends Controller
 {
     //
     public function store(request $req){
-        $name = $req->input('name');
-        $pass = $req->input('pass');
+        $name  = $req->input('name');
+        $pass  = $req->input('password');
         $email = $req->input('email');
         $token = sha1(time());
         
@@ -29,18 +29,31 @@ class usersController extends Controller
 
     public function logs(request $req){
         $email = $req->input('email');
-        $pass  = $req->input('pass');
+        $pass  = $req->input('password');
 
-        $user  = user::select("token")
+        $user  = user::select("*")
                  ->where('email', $email)
                  ->where('password', $pass)->first();
         
         if ($user){
-            return response()->json($user, 200);
+            $token = sha1(time());
+            $user->token = $token;
+            $user->save();
+
+            $data["authorization"]   = $token;
+            $data["message"]         = "Mantul";
+            $data["status"]          = 200;
+            return response()->json([
+                'data' => $data
+            ], 200);
         }
         else{
+            
+            $data["message"]         = "Salah";
+            $data["status"]          = 401;
+
             return response()->json([
-                'message' => "User not exist"
+                'data' => $data
             ], 401);
         }
     }
