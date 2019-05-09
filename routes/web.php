@@ -29,6 +29,7 @@ Route::prefix('cms')->group(function ()  {
 
         Route::get('panen',      'web\cms\panen_controller@viewIndex');
         Route::get('panen/edit', 'web\cms\panen_controller@viewEdit');
+        
     });
 
     Route::get('login',        'web\cms\auth_controller@index')->name('cms.login');

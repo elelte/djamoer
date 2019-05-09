@@ -21,5 +21,12 @@ class adminTS extends Seeder
         $adm->password = Hash::make("12345abc");
         $adm->role     = "Superadmin";
         $adm->save();
+
+        $adm2           = new admins();
+        $adm2->email    = "mamet@gmail.com";
+        $adm2->username = "mamet";
+        $adm2->password = Hash::make("12345abc");
+        $adm2->role     = "Superadmin";
+        $adm2->save();
     }
 }

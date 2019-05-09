@@ -30,4 +30,7 @@ class panen_controller extends Controller
         // return view('cms.panen.index')->with("data", $users);
         return view('cms.panen.index');
     }
+    public function viewEdit(){
+        return view('cms.panen.edit');
+    }
 }
