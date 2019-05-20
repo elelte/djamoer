@@ -29,50 +29,29 @@
   <link rel="stylesheet" href="{{asset('AdminLTE/plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.min.css')}}">
 @endsection
 
-@section('content')           
-{{-- <div class="box box-info">
-        <form class="form-horizontal">
-          <div class="box-body">
-            <div class="form-group">
-                   
-              <label for="inputUsername3" class="col-sm-2 control-label">Nama</label>
-                  <div class="col-sm-3">
-                    <input type="text" class="form-control" placeholder="Nama">
-                        <span class="input-group-btn">
-                          <button type="button" class="btn btn-success ">submit</button>
-                        </span>
-                  </div>
-
-                  
-               
-              </div>
+@section('content')    
+    <div class="box box-info">
+      <form class="form-horizontal">
+        <div class="box-body">
+          <div class="form-group">
+            <label for="inputUsername3" class="col-sm-2 control-label">Nama</label>
+  
+            <div class="col-sm-3">
+              <input type="Username" class="form-control" id="inputUsername3" placeholder="Nama">
             </div>
-                          
-                    
-                  </div> --}}
-                  <div class="box box-info">
-                    <form class="form-horizontal">
-                      <div class="box-body">
-                        <div class="form-group">
-                          <label for="inputUsername3" class="col-sm-2 control-label">Nama</label>
-                
-                          <div class="col-sm-3">
-                            <input type="Username" class="form-control" id="inputUsername3" placeholder="Nama">
-                          </div>
-                        </div>
-                        
-                      <!-- /.box-body -->
-                      <div class="box-footer">
-                        <div class="form-group">                         
-                          <div class="col-sm-3">
-                            <a href="#"><button type="submit" class="btn btn-success" style="float:right;">Simpan</button></a>
-                          </div>
-                        </div>
-                      </div>
-                      <!-- /.box-footer -->
-                    </form>
-                </div>          
-                                       
+          </div>
+          
+        <!-- /.box-body -->
+        <div class="box-footer">
+          <div class="form-group"> 
+            <div class="col-sm-3">
+              <a href="#"><button type="submit" class="btn btn-success">Simpan</button></a>
+            </div>
+          </div>
+        </div>
+        
+      </form>
+    </div>                             
 @endsection
 
 

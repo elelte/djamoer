@@ -27,8 +27,11 @@ Route::prefix('cms')->group(function ()  {
         Route::get('market',      'web\cms\akumulasi@viewIndex');
         Route::get('market/edit', 'web\cms\akumulasi@viewEdit');
 
-        Route::get('panen',      'web\cms\panen_controller@viewIndex');
-        Route::get('panen/edit', 'web\cms\panen_controller@viewEdit');
+        Route::get('laporan_panen',      'web\cms\panen\laporan_panen_controller@viewIndex');
+        Route::get('laporan_panen/edit', 'web\cms\panen\laporan_panen_controller@viewEdit');
+
+        Route::get('tahap_panen',      'web\cms\panen\tahap_panen_controller@viewIndex');
+        Route::get('tahap_panen/edit', 'web\cms\panen\tahap_panen_controller@viewEdit');
         
     });
 
