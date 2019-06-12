@@ -17,7 +17,7 @@ class CreatePanenDetailsTable extends Migration
             $table->increments('id');
             $table->integer('panen_id');
             $table->integer('user_id');
-            $table->string('weight');
+            $table->integer('weight');
             $table->timestamps();
         });
     }

@@ -28,6 +28,10 @@ class auth_controller extends Controller
         return view('cms.login.login');
     }
 
+    public function indexsss(){
+        return view('cms.login.login');
+    }
+
     public function loginProcess(Request $request){
         $email    = $request->get('email');
         $admins   = admins::where('email',$email)

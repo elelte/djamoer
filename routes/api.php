@@ -13,15 +13,15 @@ use Illuminate\Http\Request;
 |
 */
 
-Route::post("/auth/login",   "api\usersController@logs");
+// Route::post("/auth/login",   "api\usersController@logs");
 
 // Route::get("/user/detail/{name}", "api\usersController@detail")->middleware("MWAuth");
 
-Route::middleware("MWAuth")->group(function () {
+// Route::middleware("MWAuth")->group(function () {
     
-    Route::get("/user/detail/{name}", "api\usersController@detail");
+//     Route::get("/user/detail/{name}", "api\usersController@detail");
 
-    Route::prefix('/user/transaksi/')->group(function () {
-        Route::get('get', "api\CTransaksi@get");
-    });
-});
+//     Route::prefix('/user/transaksi/')->group(function () {
+//         Route::get('get', "api\CTransaksi@get");
+//     });
+// });

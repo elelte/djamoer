@@ -13,31 +13,32 @@
 Route::prefix('cms')->group(function ()  {
 
     Route::group(['middleware' => 'CMSAuth'], function () {
-        Route::get('/', 'web\cms\auth_controller@toHome')->name('cms-home');;
+        Route::get('/', 'Web\Cms\auth_controller@toHome')->name('cms-home');;
         
-        Route::get('akumulasi',      'web\cms\akumulasi@viewIndex');
-        Route::get('akumulasi/edit', 'web\cms\akumulasi@viewEdit');
+        Route::get('akumulasi',      'Web\Cms\akumulasi@viewIndex');
+        Route::get('akumulasi/edit', 'Web\Cms\akumulasi@viewEdit');
     
-        Route::get('user',            'web\cms\user_controller@viewIndex');
-        Route::get('user/edit/{id}',  'web\cms\user_controller@viewEdit');
-        Route::post('user/edit/{id}', 'web\cms\user_controller@updateUser');
-        Route::get('user/add',        'web\cms\user_controller@viewAdd');
-        Route::post('user/add',       'web\cms\user_controller@createUser');
+        Route::get('user',            'Web\Cms\user_controller@viewIndex');
+        Route::get('user/edit/{id}',  'Web\Cms\user_controller@viewEdit');
+        Route::post('user/edit/{id}', 'Web\Cms\user_controller@updateUser');
+        Route::get('user/add',        'Web\Cms\user_controller@viewAdd');
+        Route::post('user/add',       'Web\Cms\user_controller@createUser');
 
-        Route::get('market',      'web\cms\akumulasi@viewIndex');
-        Route::get('market/edit', 'web\cms\akumulasi@viewEdit');
+        Route::get('market',      'Web\Cms\akumulasi@viewIndex');
+        Route::get('market/edit', 'Web\Cms\akumulasi@viewEdit');
 
-        Route::get('laporan_panen',      'web\cms\panen\laporan_panen_controller@viewIndex');
-        Route::get('laporan_panen/edit', 'web\cms\panen\laporan_panen_controller@viewEdit');
+        Route::get('laporan_panen',      'Web\Cms\panen\laporan_panen_controller@viewIndex');
+        Route::get('laporan_panen/edit', 'Web\Cms\panen\laporan_panen_controller@viewEdit');
 
-        Route::get('tahap_panen',      'web\cms\panen\tahap_panen_controller@viewIndex');
-        Route::get('tahap_panen/edit', 'web\cms\panen\tahap_panen_controller@viewEdit');
+        Route::get('tahap_panen',      'Web\Cms\panen\tahap_panen_controller@viewIndex');
+        Route::get('tahap_panen/edit', 'Web\Cms\panen\tahap_panen_controller@viewEdit');
         
     });
 
-    Route::get('login',        'web\cms\auth_controller@index')->name('cms.login');
-    Route::post('login/post',  'web\cms\auth_controller@loginProcess');
-    Route::get('logout',      'web\cms\auth_controller@logout');
+    Route::get('login',        'Web\Cms\auth_controller@index')->name('cms.login');
+    Route::post('login/post',  'Web\Cms\auth_controller@loginProcess');
+    Route::get('logout',      'Web\Cms\auth_controller@logout');
+    
 });
 
 Auth::routes();
