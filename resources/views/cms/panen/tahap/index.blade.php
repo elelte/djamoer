@@ -43,52 +43,45 @@
             <th>Est Biaya</th>
             <th>Est Keuntungan/Hari</th>
             <th>Est Produksi</th>
-            <th>Est Tanggal</th>
+            <th>Est Durasi</th>
             <th>Keterangan</th>
             <th>Status</th>
             <th><i class="fa fa-cog"></i> Action</th>
         </tr>
+        @foreach ($data as $d)
         <tr>
-            <td>1.</td>
-            <td>Test</td>
-            <td>Gan</td>   
-            <td>Tanggal</td>    
-            <td>Tanggal</td>
-            <td>Tanggal</td> 
-            <td>Keterangan</td>   
-            <td>Status</td>                        
+            <td>{{ $d->id }}</td>
+            <td>{{ $d->name }}</td>
+            <td>{{ $d->est_biaya }}</td>
+            <td>{{ $d->est_keuntungan }}</td>  
+            <td>{{ $d->est_produksi }}</td>
+            <td>{{ $d->est_durasi }}</td>
+            <td>{{ $d->desc }}</td>
+            <td>{{ $d->status }}</td>                   
             <td>
-            <div class="btn-toolbar">
-                <div class="btn-group" role="group">
-                <a href ="/akumulasi/edit"> <button class="btn btn-success" type="button"><i class="glyphicon glyphicon-pencil"></i></button>
+                <div class="btn-toolbar">
+                    <div class="btn-group" role="group">
+                    <a href ="{{ url('cms/tahap_panen/edit', $d->id) }}"> <button class="btn btn-success" type="button"><i class="glyphicon glyphicon-pencil"></i></button>
                 </a></div>
-            {{-- <div class="btn-group" role="group">
-                <button class="btn btn-danger" type="button"><i class="glyphicon glyphicon-trash"></i></button>
-                </div>
-            </div> --}}
             </td>
         </tr>
+        @endforeach
+
         </tbody>
      </table>
     </div>
-    <!-- /.box-body -->
+
     <div class="box-footer">
             <div class="row">
-                    <div class="col-xs-6 col-sm-6 col-md-7 col-lg-6"style="padding-top:3px"><div class="dataTables_info" id="example1_info" role="status" aria-live="polite">Showing 1 to 10 of 57 entries</div></div>
-                    {{-- <div class="col"> --}}
-                        <nav class="col-md-3" style="float:right">
-                            <ul class="pagination no-margin pagination-sm pull-right">
-                                <li class="page-item"><a class="page-link" aria-label="Previous"><span aria-hidden="true">«</span></a></li>
-                                <li class="page-item"><a class="page-link">1</a></li>
-                                <li class="page-item"><a class="page-link">2</a></li>
-                                <li class="page-item"><a class="page-link">3</a></li>                                
-                                <li class="page-item"><a class="page-link" aria-label="Next"><span aria-hidden="true">»</span></a></li>
-                            </ul>
-                        </nav>
+                    <div class="col-xs-6 col-sm-6 col-md-7 col-lg-6"style="padding-top:3px">
+                        <div class="dataTables_info" id="example1_info" role="status" aria-live="polite"> Showing 1 to 10 of {{ count($data) }} panen </div>
+                    </div>
+                    <div class="col">
+                        {{ $data->links() }}
                     </div>
                 </div>
             </div>
-</div>
+    </div>
     
             
 @endsection

@@ -13,6 +13,7 @@
 Route::prefix('cms')->group(function ()  {
 
     Route::group(['middleware' => 'CMSAuth'], function () {
+        
         Route::get('/', 'Web\Cms\auth_controller@toHome')->name('cms-home');;
         
         Route::get('akumulasi',      'Web\Cms\akumulasi@viewIndex');
@@ -28,10 +29,10 @@ Route::prefix('cms')->group(function ()  {
         Route::get('market/edit', 'Web\Cms\akumulasi@viewEdit');
 
         Route::get('laporan_panen',      'Web\Cms\panen\laporan_panen_controller@viewIndex');
-        Route::get('laporan_panen/edit', 'Web\Cms\panen\laporan_panen_controller@viewEdit');
+        Route::get('laporan_panen/edit/{id}', 'Web\Cms\panen\laporan_panen_controller@viewEdit');
 
         Route::get('tahap_panen',      'Web\Cms\panen\tahap_panen_controller@viewIndex');
-        Route::get('tahap_panen/edit', 'Web\Cms\panen\tahap_panen_controller@viewEdit');
+        Route::get('tahap_panen/edit/{id}', 'Web\Cms\panen\tahap_panen_controller@viewEdit');
         
     });
 

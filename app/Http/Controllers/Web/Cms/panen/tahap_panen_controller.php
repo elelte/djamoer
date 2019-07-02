@@ -25,11 +25,10 @@ class tahap_panen_controller extends Controller
      * @return \Illuminate\Http\Response
      */
     public function viewIndex(){
-        // $users = user::paginate(10);
-        // return view('cms.panen.index')->with("data", $users);
-        return view('cms.panen.tahap.index');
+        $panens = panen::paginate(10);
+        return view('cms.panen.tahap.index')->with("data", $panens);
     }
     public function viewEdit(){
-        return view('cms.panen.edit');
+        return view('cms.panen.tahap.edit');
     }
 }
