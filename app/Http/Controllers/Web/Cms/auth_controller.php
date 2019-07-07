@@ -19,7 +19,7 @@ class auth_controller extends Controller
     {
         $this->middleware('guest')->except('logout');
     }
-    /**sd
+    /**sdd
      * Show the application dashboard.
      *
      * @return \Illuminate\Http\Response
